@@ -4,7 +4,7 @@
 	
 	$emailsArray = explode(";", $emails);
 	
-	$db = mysqli_connect("127.0.0.1","root","redhat@11111p","campaning_engine");
+	$db = mysqli_connect("127.0.0.1","root","REDHAT","campaning_engine");
 
 	if($_SERVER["REQUEST_METHOD"] == "POST") { //checking that if method is post
 	      

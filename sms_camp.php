@@ -14,7 +14,7 @@ function phoneNumbervalidation($mobile)
 	
 	$mobilesArray = explode(";", $mobiles);
 	
-	$db = mysqli_connect("127.0.0.1","root","redhat@11111p","campaning_engine");
+	$db = mysqli_connect("127.0.0.1","root","REDHAT","campaning_engine");
 
 	if($_SERVER["REQUEST_METHOD"] == "POST") { //checking that if method is post
 	      
@@ -46,7 +46,7 @@ function phoneNumbervalidation($mobile)
 
 <center>
 <h2>
-Insert Emails
+Insert mobile numbers
 </h2>
 
 <form method="post">
