@@ -1,10 +1,18 @@
 <?php 
 
 	$emails =  $_POST['email'];
-$name = $_POST ['name'];
+$name = $_POST ['firts name'];
+
+$name = $_POST ['last name'];
+
 $name = $_POST ['area'];
+
 $name = $_POST ['type'];
+
 $name = $_POST ['days'];
+
+$username = $_POST['username'];
+
 
 	
 	
@@ -37,7 +45,8 @@ $name = $_POST ['days'];
 </head>
 <body>
 
-<?php require_once "includes/header.inc.php"; ?>
+<?php require_once "includes/header.inc.php";
+ ?>
 
 <centre>
 <h2>
@@ -60,6 +69,11 @@ CREATE CAMPANIN
 
                      type         <textarea name="emails" cols="50" rows="1">
 </textarea><br/>
+
+                     days        <textarea name="enter name" cols="50" rows="1">
+
+</textarea><br/>
+
 
 
 
