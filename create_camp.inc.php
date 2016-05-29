@@ -1,90 +1,91 @@
-<?php 
 
-	$emails =  $_POST['email'];
-$name = $_POST ['firts name'];
-
-$name = $_POST ['last name'];
-
-$name = $_POST ['area'];
-
-$name = $_POST ['type'];
-
-$name = $_POST ['days'];
-
-$username = $_POST['username'];
-
-
-	
-	
-	
-	$db = mysqli_connect("127.0.0.1","root","REDHAT","campaning_engine");
-
-	if($_SERVER["REQUEST_METHOD"] == "POST") { //checking that if method is post
-	      
-	      foreach ($emails as $email){
-			if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-			  	$sql = "INSERT INTO emails (email,creation) VALUES('".$email."','".date("Y-m-d H:i:s")."');";
-				$result = mysqli_query($db,$sql); //user the execute mysql queries
-			}
-			else 
-				echo "INVALID: ".$email. " <br/>";
-	      
-	  	}
-	      
-
-
-	}
-
-	
-
-
-?>
 <html>
-<head>
-<title> create Campaning</title>
+<head><h1>
+<b>CAMPANING ENGINE</b></h1>
+<style>
+.inputgroup{
+max-width:200px;
+margin:50px;
+}
+.inputfield{
+float:right;
+margin-right:40em;
+width:150px;
+}
+</style>
 </head>
-<body>
+<body>  
 
-<?php require_once "includes/header.inc.php";
- ?>
-
-<centre>
-<h2>
-CREATE CAMPANIN
-</h2>
-
-<form method="post">
-
-                        first name <textarea name="enter name" cols="50" rows="1">
-</textarea><br/>
-
-                     last name :   <textarea name="last name" cols="50" rows="1">
-</textarea><br/>
-
-                     email        <textarea name="email" cols="50" rows="1">
-</textarea><br/>
-
-                     area         <textarea name="enter city" cols="50" rows="1">
-</textarea><br/>
-
-                     type         <textarea name="emails" cols="50" rows="1">
-</textarea><br/>
-
-                     days        <textarea name="enter name" cols="50" rows="1">
-
-</textarea><br/>
+<?php
 
 
 
+ {
+if($_SERVER["REQUEST_METHOD"] == "POST") {
+	
+  $name =  $_POST['name'];
+   $type = $_POST['type'];
+ $area = $_POST['city'];
+  $days = $_POST['number'];
+  $sms_count = $_POST['number'];
+ $sms_body = $_POST['text'];
+$email_subject = $_POST['text'];
+ $email_count = $_POST['number'];
+ $email_body = $_POST['text'];
+  $creation_dateime = $_POST['date'];
+  $message_count = $_POST['number'];
+}
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+}
+$db = mysqli_connect("127.0.0.1","root","REDHAT","campaning_engine");
+?>
 
-<input type="submit" name="post_emails" value="Submit it!"  />
+<I><h2>CREATE CAMPANING</h2></I>
+<form method="post" > 
+  <div><span class="inputgroup"> Name: </span><input type="text" class="inputfield" name="name">
+  </div><br><br>
 
+ <div><span class= "inputgroup" >   TYPE:</span>
+  <input type="radio" name="campain type" value="sms">sms
+  <input type="radio" name="campain type" value="email">email
+ <input type="radio" name="campain type" value="email">both
+ </div> <br><br>
+  
+
+ <div ><span class= "inputgroup" > AREA:</span>
+  <input type="radio" name="area" value="in record">known
+  <input type="radio" name="area" value="not in record">unknown
+
+
+<textarea name="area" rows="1" cols="10"></textarea>
+ </div>   <br><br>
+<div ><span class= "inputgroup" >days: <input type="text"  class="inputfield" name="number">
+ <div><span class= "inputgroup" > sms count: <input type="text"  class="inputfield" name="count">
+  </span></div><br><br>
+  </span></div><br><br>
+ <div><span class= "inputgroup" > sms text:</span> <textarea name="comment" rows="5" cols="40"></textarea>
+ </div><br><br>
+<div><span class= "inputgroup" >creation date: <input type="text"  class="inputfield" name="date">
+ </span> </div><br><br>
+<div><span class= "inputgroup" >message count: <input type="text"  class="inputfield" name="count">
+  </span></div><br><br>
+ <div><span class= "inputgroup" > email count: <input type="text"  class="inputfield" name="count">
+  </span></div><br><br>
+ <div><span class= "inputgroup" > email subject: <input type="text"  class="inputfield" name="count">
+  </span></div><br><br>
+ <div><span class= "inputgroup" > email body:</span> <textarea name="comment" rows="5" cols="40"></textarea>
+ </div><br><br>
+<center>
+  <input type="submit" name="submit" value="Submit">  
+</center>
 </form>
 
-</centre>
 
-</body>
-</html>
 
 </body>
 </html>
