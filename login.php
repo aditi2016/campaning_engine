@@ -2,10 +2,11 @@
 	$username =  $_POST['username'];
 	$password = $_POST['password'];
 
-	$db = mysqli_connect("127.0.0.1","root","redhat@11111p","campaning_engine");
+                        $db = mysqli_connect("127.0.0.1","root","REDHAT","campaning_engine");
 
 	if($_SERVER["REQUEST_METHOD"] == "POST") { //checking that if method is post
 	      // username and password sent from form 
+
 	      
 	      $username = mysqli_real_escape_string($db,$username);//clear the data
 	      $password = mysqli_real_escape_string($db,$password);
@@ -13,10 +14,11 @@
 
 	      $sql = "SELECT id FROM users WHERE username = '$username' and password = '$password'";
 	      $result = mysqli_query($db,$sql); //user the execute mysql queries
-	  
 	      $count = mysqli_num_rows($result); //counting number of rows
 	      
-	      // If result matched $myusername and $mypassword, table row must be 1 row
+
+	      
+              // If result matched $myusername and $mypassword, table row must be 1 row
 		
 	      if($count == 1) {
 		          
@@ -32,7 +34,7 @@
 ?>
 <html>
 <head>
-<title>Hai, I am title</title>
+<title>login page</title>
 </head>
 <body>
 <center>

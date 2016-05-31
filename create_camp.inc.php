@@ -1,91 +1,124 @@
 
 <html>
-<head><h1>
-<b>CAMPANING ENGINE</b></h1>
-<style>
-.inputgroup{
-max-width:200px;
-margin:50px;
-}
-.inputfield{
-float:right;
-margin-right:40em;
-width:150px;
-}
-</style>
+<head>
 </head>
-<body>  
+<body style="background-color:lightgrey;">  
 
-<?php
-
-
-
- {
+<?php	
+ 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
 	
-  $name =  $_POST['name'];
-   $type = $_POST['type'];
- $area = $_POST['city'];
-  $days = $_POST['number'];
-  $sms_count = $_POST['number'];
- $sms_body = $_POST['text'];
-$email_subject = $_POST['text'];
- $email_count = $_POST['number'];
- $email_body = $_POST['text'];
-  $creation_dateime = $_POST['date'];
-  $message_count = $_POST['number'];
+	$name = $_POST['name'];
+	$type = $_POST['campain_type'];
+	$area = $_POST['area'];
+	$days = $_POST['days'];
+	$smsCount = $_POST['sms_count'];
+	$smsBody = $_POST['sms_text'];
+	$emailSubject = $_POST['email_subject'];
+	$emailCount = $_POST['email_count'];
+	$emailBody = $_POST['email_body'];
+
+  
+	$db = mysqli_connect("127.0.0.1","root","REDHAT","campaning_engine");
+        $sql = "INSERT INTO campaning
+			(
+			name,
+			creation,
+			type,
+			area,
+			days,
+			sms_count,
+			sms_text,
+			email_subject,
+			email_count,
+			email_body
+			) 
+		VALUES(
+			'".$name."',
+			'".date("Y-m-d H:i:s")."' ,
+			'".$type."',
+			'".$area."',
+			'".$days."',
+			'".$smsCount."',
+			'".$smsBody."',
+			'".$emailSubject."',
+			'".$emailCount."' ,
+			'".$emailBody."'
+			);";
+
+	$result = mysqli_query($db,$sql);
+
 }
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
-}
-$db = mysqli_connect("127.0.0.1","root","REDHAT","campaning_engine");
+
 ?>
 
-<I><h2>CREATE CAMPANING</h2></I>
-<form method="post" > 
-  <div><span class="inputgroup"> Name: </span><input type="text" class="inputfield" name="name">
-  </div><br><br>
-
- <div><span class= "inputgroup" >   TYPE:</span>
-  <input type="radio" name="campain type" value="sms">sms
-  <input type="radio" name="campain type" value="email">email
- <input type="radio" name="campain type" value="email">both
- </div> <br><br>
-  
-
- <div ><span class= "inputgroup" > AREA:</span>
-  <input type="radio" name="area" value="in record">known
-  <input type="radio" name="area" value="not in record">unknown
-
-
-<textarea name="area" rows="1" cols="10"></textarea>
- </div>   <br><br>
-<div ><span class= "inputgroup" >days: <input type="text"  class="inputfield" name="number">
- <div><span class= "inputgroup" > sms count: <input type="text"  class="inputfield" name="count">
-  </span></div><br><br>
-  </span></div><br><br>
- <div><span class= "inputgroup" > sms text:</span> <textarea name="comment" rows="5" cols="40"></textarea>
- </div><br><br>
-<div><span class= "inputgroup" >creation date: <input type="text"  class="inputfield" name="date">
- </span> </div><br><br>
-<div><span class= "inputgroup" >message count: <input type="text"  class="inputfield" name="count">
-  </span></div><br><br>
- <div><span class= "inputgroup" > email count: <input type="text"  class="inputfield" name="count">
-  </span></div><br><br>
- <div><span class= "inputgroup" > email subject: <input type="text"  class="inputfield" name="count">
-  </span></div><br><br>
- <div><span class= "inputgroup" > email body:</span> <textarea name="comment" rows="5" cols="40"></textarea>
- </div><br><br>
 <center>
-  <input type="submit" name="submit" value="Submit">  
-</center>
-</form>
+<h1>
+<b>CAMPANING ENGINE</b></h1>
+<I>
+
+<h2 style="color:blue;">  CREATE CAMPANING  </h2></I>
+
+<table width="10">
+
+<form method="post" > 
+
+ <tr>
+          <td> Name:<td/> <td><input type="text" name="name" required/>
+<td/><br/>
+
+<tr>
+
+        <td>  Type:<td/> <td><input type="radio" name="campain_type" value="sms" required>sms
+               <input type="radio" name="campain_type" value="email">email
+               <input type="radio" name="campain_type" value="email">both<td/>
+<tr/><br/>
+ 
+<tr>
+  
+      <td>   Area:   <td/>     <td> <input type="text" name="area" required /><td/>
+ <tr/><br />
+
+<tr>
+         <td>Days:  <td/>   <td><input type="number" name="days" max="90" min="5" align="right" required><td/>
+ <tr/><br/>
+ 
+<tr>
+
+        <td> Sms Count:  <td/> <td> <input type="number" name="sms_count" required><td/>
+ <tr/><br/>
+  
+<tr>
+          <td>Sms Text:<td/><td><textarea name="sms_text" rows="5" cols="40" required></textarea><td/>
+ <tr/><br/>
+  
+<tr>
+         <td>Email Count:<td/><td>  <input type="number" name="email_count" required><td/>
+<tr/> <br/>
+
+ <tr>
+         <td>Email Subject:<td/><td><input type="text" name="email_subject" required><td/>
+ <tr/><br/>
+
+<tr>
+ 
+ 
+         <td>Email Body:<td/> <td><textarea name="email_body" rows="5" cols="40"required></textarea><td/>
+ <tr/><br/>
+ 
 
 
 
+      <td> <input type="submit" name="submit" value="Submit" ><td/>  
+
+<form/>
+<table/>
+ 
+<center/>
 </body>
+<footer>
+  <p>shatkonslabs</p>
+  <p>sector-31,gurgaon.india <a href="blueteam.in">
+  </a>.</p>
+</footer> 
 </html>
