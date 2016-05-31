@@ -4,8 +4,9 @@
 </head>
 <body style="background-color:lightgrey;">  
 
-<?php	
- 
+<?php
+require_once "config/db_connection.php";
+
 if($_SERVER["REQUEST_METHOD"] == "POST") {
 	
 	$name = $_POST['name'];
@@ -18,8 +19,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 	$emailCount = $_POST['email_count'];
 	$emailBody = $_POST['email_body'];
 
-  
-	$db = mysqli_connect("127.0.0.1","root","REDHAT","campaning_engine");
+
         $sql = "INSERT INTO campaning
 			(
 			name,

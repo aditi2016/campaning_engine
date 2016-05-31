@@ -1,4 +1,8 @@
-<?php 
+<?php
+
+require_once "config/db_connection.php";
+
+
 function phoneNumbervalidation($mobile)
 {
  if(preg_match('/^((\+){0,1}91(\s){0,1}(\-){0,1}(\s){0,1})?([0-9]{10})$/', $mobile,$matches)){
@@ -14,7 +18,7 @@ function phoneNumbervalidation($mobile)
 	
 	$mobilesArray = explode(";", $mobiles);
 	
-	$db = mysqli_connect("127.0.0.1","root","REDHAT","campaning_engine");
+
 
 	if($_SERVER["REQUEST_METHOD"] == "POST") { //checking that if method is post
 	      
