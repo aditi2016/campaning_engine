@@ -1,10 +1,11 @@
-<?php 
+<?php
+
+require_once "config/db_connection.php";
 
 	$emails =  $_POST['emails'];
 	
 	$emailsArray = explode(";", $emails);
-	
-	$db = mysqli_connect("127.0.0.1","root","REDHAT","campaning_engine");
+
 
 	if($_SERVER["REQUEST_METHOD"] == "POST") { //checking that if method is post
 	      

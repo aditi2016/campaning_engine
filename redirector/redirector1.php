@@ -9,7 +9,7 @@
 $CampaningID = $_GET['c'];
 $campaningLogId = $_GET['l'];
 
-$db = mysqli_connect("127.0.0.1", "root", "redhat@11111p", "campaning_engine");
+
 
 
 $CampaningID = mysqli_real_escape_string($db, $CampaningID);//clear the data
