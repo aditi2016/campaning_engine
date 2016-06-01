@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			'" . $emailBody . "',
 			'" . $forwardUrl . "'
 			);";
-
+echo $sql;
     $result = mysqli_query($db, $sql);
 
     $id = mysqli_insert_id($db_handle);
