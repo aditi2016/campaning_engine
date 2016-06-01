@@ -16,7 +16,7 @@ $CampaningID = mysqli_real_escape_string($db, $CampaningID);//clear the data
 $campaningLogId = mysqli_real_escape_string($db, $campaningLogId);
 
 
-$sql = "SELECT * FROM campanig WHERE id = '$CampaningID' ";
+$sql = "SELECT * FROM campaning WHERE id = '$CampaningID' ";
 $result = mysqli_query($db, $sql);
 
 $campDetails = mysqli_fetch_assoc($result);
@@ -24,7 +24,7 @@ $forwardURL = $details['forward_url'];
 
 
 //updating the logs
-$sql = "SELECT * FROM campanig WHERE id = '$CampaningID' ";
+$sql = "SELECT * FROM campaning WHERE id = '$CampaningID' ";
 $result = mysqli_query($db, $sql);
 
 
@@ -33,11 +33,8 @@ $count = mysqli_num_rows($result); //counting number of rows
 
 // If result matched $myusername and $mypassword, table row must be 1 row
 
-if ($count == 1) {
 
-    header("location: sms_camp.php"); // will relocate to specified location
-} else {
-    $error = "<center>Your Login Name or Password is invalid</center>";
-}
+header("location: $forwardURL"); // will relocate to specified location
+
 
 
