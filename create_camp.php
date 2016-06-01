@@ -45,6 +45,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $result = mysqli_query($db, $sql);
 
+    $id = mysqli_insert_id($db_handle);
+
+    if($id == 0 ){
+        echo  "Alert! Error occurred<br/>";
+        echo("Error description: " . mysqli_error($con));
+        die();
+    }
 }
 
 ?>
