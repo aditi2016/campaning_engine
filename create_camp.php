@@ -1,5 +1,10 @@
 <?php
 session_start();
+if (!isset($_SESSION['user_id']))
+    header("location: login.php");
+
+$userID = $_SESSION['user_id'];
+
 
 require_once "config/db_connection.php";
 
@@ -29,7 +34,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			email_subject,
 			email_count,
 			email_body,
-			forward_url
+			forward_url,
+			user_id
 			)
 		VALUES(
 			'" . $name . "',
@@ -42,7 +48,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			'" . $emailSubject . "',
 			'" . $emailCount . "' ,
 			'" . $emailBody . "',
-			'" . $forwardUrl . "'
+			'" . $forwardUrl . "',
+			'" . $userID . "'
 			);";
 echo $sql;
     $result = mysqli_query($db, $sql);

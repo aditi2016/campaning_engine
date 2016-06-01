@@ -1,5 +1,10 @@
 <?php
 session_start();
+if (!isset($_SESSION['user_id']))
+    header("location: login.php");
+
+$userID = $_SESSION['user_id'];
+
 
 require_once "config/db_connection.php";
 
@@ -12,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { //checking that if method is post
 
     foreach ($emailsArray as $email) {
         if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            $sql = "INSERT INTO emails (email,creation) VALUES('" . $email . "','" . date("Y-m-d H:i:s") . "');";
+            $sql = "INSERT INTO emails (email,creation) VALUES('" . $email . "','" . date("Y-m-d H:i:s") . "','" . $userID . "');";
             $result = mysqli_query($db, $sql); //user the execute mysql queries
         } else
             echo "INVALID: " . $email . " <br/>";
