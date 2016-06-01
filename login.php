@@ -1,5 +1,9 @@
 <?php
 
+session_start();
+if(isset($_SESSION['user_id']))
+    header("location: sms_camp.php");
+
 require_once "config/db_connection.php";
 
 $username = $_POST['username'];
@@ -16,12 +20,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { //checking that if method is post
     $sql = "SELECT id FROM users WHERE username = '$username' and password = '$password'";
     $result = mysqli_query($db, $sql); //user the execute mysql queries
 
+    $userDetails = mysqli_fetch_assoc($result);
+    $userID = $userDetails['id'];
+
+
+
     $count = mysqli_num_rows($result); //counting number of rows
 
     // If result matched $myusername and $mypassword, table row must be 1 row
 
     if ($count == 1) {
-
+        $_SESSION['user_id'] = $userID;
         header("location: sms_camp.php"); // will relocate to specified location
     } else {
         $error = "<center>Your Login Name or Password is invalid</center>";

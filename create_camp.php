@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 require_once "config/db_connection.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -45,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 echo $sql;
     $result = mysqli_query($db, $sql);
 
-    $id = mysqli_insert_id($db_handle);
+    $id = mysqli_insert_id($db);
 
     if($id == 0 ){
         echo  "Alert! Error occurred<br/>";
