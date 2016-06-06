@@ -31,12 +31,26 @@ while($camp = mysqli_fetch_assoc($result)){
 
         sendMail($email['email'], $camp['email_subject'], $camp['email_body']);
 
+        //insert campaning_log
+
     }
 
 
         //sending emails
     //getting mobiles
-        //sending sms
+        //sending sms sendSMS($to, $message)
+
+    $sql = "SELECT * FROM `mobiles` LIMIT 0 , ". $camp['sms_count'];
+    $result = mysqli_query($db, $sql);
+
+    while($mobile = mysqli_fetch_assoc($result)){
+
+
+        sendSMS($mobile['mobile'], $camp['sms_text']);
+
+        //insert campaning_log
+
+    }
 
 
 
