@@ -8,6 +8,7 @@
 
 require_once "../library/sendEmail.php";
 require_once "../library/sms.php";
+require_once "../config/db_connection.php";
 //getting new starting campanings
 //SELECT * FROM `campaning` WHERE `id` not in (select distinct campaning_id from campaning_logs where 1)
 
