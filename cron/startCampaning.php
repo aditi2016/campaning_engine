@@ -33,6 +33,13 @@ while($camp = mysqli_fetch_assoc($result)){
 
         //insert campaning_log
 
+        $sql = "INSERT
+                    INTO `campaning_engine`.`campaning_logs`
+                    (`id`, `campaning_id`, `mobile_email_id`, `type`, `creation`, `status`)
+                    VALUES (NULL, '".$camp['id']."', '".$email['id']."', 'email', '".date("Y-m-d H:i:s") ."' , \'sent\');";
+
+        $inserted = mysqli_query($db, $sql);
+
     }
 
 
@@ -49,6 +56,12 @@ while($camp = mysqli_fetch_assoc($result)){
         sendSMS($mobile['mobile'], $camp['sms_text']);
 
         //insert campaning_log
+        $sql = "INSERT
+                    INTO `campaning_engine`.`campaning_logs`
+                    (`id`, `campaning_id`, `mobile_email_id`, `type`, `creation`, `status`)
+                    VALUES (NULL, '".$camp['id']."', '".$mobile['id']."', 'mobile', '".date("Y-m-d H:i:s") ."' , \'sent\');";
+
+        $inserted = mysqli_query($db, $sql);
 
     }
 

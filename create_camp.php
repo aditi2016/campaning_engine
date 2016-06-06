@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			'" . $forwardUrl . "',
 			'" . $userID . "'
 			);";
-echo $sql;
+//echo $sql;
     $result = mysqli_query($db, $sql);
 
     $id = mysqli_insert_id($db);
