@@ -38,6 +38,8 @@ while($camp = mysqli_fetch_assoc($result)){
                     (`id`, `campaning_id`, `mobile_email_id`, `type`, `creation`, `status`)
                     VALUES (NULL, '".$camp['id']."', '".$email['id']."', 'email', '".date("Y-m-d H:i:s") ."' , \'sent\');";
 
+        echo $sql;
+
         $inserted = mysqli_query($db, $sql);
 
     }
