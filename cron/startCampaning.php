@@ -61,7 +61,7 @@ while($camp = mysqli_fetch_assoc($result)){
         $sql = "INSERT
                     INTO `campaning_engine`.`campaning_logs`
                     (`id`, `campaning_id`, `mobile_email_id`, `type`, `creation`, `status`)
-                    VALUES (NULL, '".$camp['id']."', '".$mobile['id']."', 'mobile', '".date("Y-m-d H:i:s") ."' , 'sent');";
+                    VALUES (NULL, '".$camp['id']."', '".$mobile['id']."', 'sms', '".date("Y-m-d H:i:s") ."' , 'sent');";
 
         $inserted = mysqli_query($db, $sql);
 
