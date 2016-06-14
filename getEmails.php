@@ -9,7 +9,7 @@
 require_once "config/db_connection.php";
 
 
-$sql = "SELECT distinct name,email from mobac.contact where email != \"\" ";
+$sql = "SELECT distinct name,email from mobac.contacts where email != \"\" ";
 $result = mysqli_query($db, $sql);
 
 //doing campaigning first time
