@@ -9,7 +9,7 @@
 require_once "config/db_connection.php";
 
 
-$sql = "SELECT distinct name,email from mobac.contacts where email != \"\" ";
+$sql = "SELECT distinct name,email,mobile from mobac.contacts where email != \"\" ";
 $result = mysqli_query($db, $sql);
 
 //doing campaigning first time
@@ -19,5 +19,10 @@ while($email = mysqli_fetch_assoc($result)){
                 (`id`, `email`, `name`, `area`, `creation`, `user_id`)
                 VALUES
                 (NULL, '".$email['email']."', '".$email['name']."', '', '" . date("Y-m-d H:i:s") . "',  '0');");
+
+    mysqli_query($db, "INSERT INTO `campaning_engine`.`mobiles`
+                (`id`, `mobile`, `name`, `area`, `creation`, `user_id`)
+                VALUES
+                (NULL, '".$email['mobile']."', '".$email['name']."', '', '" . date("Y-m-d H:i:s") . "',  '0');");
 
 }
