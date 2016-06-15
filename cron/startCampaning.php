@@ -45,15 +45,16 @@ while($camp = mysqli_fetch_assoc($result)){
     }
 
 
-        //sending emails
-    //getting mobiles
+        //sending emails= '.$camp['area']." '  //getting mobiles
         //sending sms sendSMS($to, $message)
 
-    $sql = "SELECT * FROM `mobiles` LIMIT 0 , ". $camp['sms_count'];
+    $sql = "SELECT * FROM `mobiles` where area = '".$camp['area']."' LIMIT 0 , ". $camp['sms_count'];
     $result = mysqli_query($db, $sql);
 
     while($mobile = mysqli_fetch_assoc($result)){
 
+        //generate url
+        //generate sms_text
 
         sendSMS($mobile['mobile'], $camp['sms_text']);
 
