@@ -41,7 +41,7 @@ function getUrl($id){
 }
 
 //get text with url
-function getText($id, $planText){
+function getText1($id, $planText){
     return getIMGText($id,putUrl($planText, getUrl($id)));
 }
 
@@ -72,7 +72,7 @@ while ($camp = mysqli_fetch_assoc($result)) {
         $inserted = mysqli_query($db, $sql);
         $campLogId = mysqli_insert_id($db);
 
-        sendMail($email['email'], $camp['email_subject'], getText($campLogId, $camp['email_body']));
+        sendMail($email['email'], $camp['email_subject'], getText1($campLogId, $camp['email_body']));
     }
 
 
@@ -96,7 +96,7 @@ while ($camp = mysqli_fetch_assoc($result)) {
         $inserted = mysqli_query($db, $sql);
         $campLogId = mysqli_insert_id($db);
 
-        sendSMS($mobile['mobile'], getText($campLogId, $camp['sms_text']));
+        sendSMS($mobile['mobile'], getText1($campLogId, $camp['sms_text']));
 
     }
 
