@@ -14,6 +14,21 @@ require_once "../config/db_connection.php";
 //getting new starting campanings
 //SELECT * FROM `campaning` WHERE `id` not in (select distinct campaning_id from campaning_logs where 1)
 
+//replace url
+function putIMGUrl($text, $url){
+    return str_replace("IMGURL", $url, $text);
+}
+
+//geting url
+function getIMGUrl($id){
+    return "http://shatkonlabs.com/i-" . $id;
+}
+
+//get text with url
+function getIMGText($id, $planText){
+    return putIMGUrl($planText, getIMGUrl($id));
+}
+
 
 //replace url
 function putUrl($text, $url){
@@ -27,7 +42,7 @@ function getUrl($id){
 
 //get text with url
 function getText($id, $planText){
-    return putUrl($planText, getUrl($id));
+    return getIMGText($id,putUrl($planText, getUrl($id)));
 }
 
 
