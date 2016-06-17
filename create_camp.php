@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $smsBody = $_POST['sms_text'];
     $emailSubject = $_POST['email_subject'];
     $emailCount = $_POST['email_count'];
-    $emailBody = $_POST['email_body'];
+    $emailBody = base64_encode($_POST['email_body']);
 
 
     $sql = "INSERT INTO campaning
@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if($id == 0 ){
         echo  "Alert! Error occurred<br/>";
-        echo("Error description: " . mysqli_error($con));
+        echo("Error description: " . mysqli_error($db));
         die();
     }
 }
