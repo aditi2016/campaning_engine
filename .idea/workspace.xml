@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3eec4a00-6028-4870-b467-575f01178c68" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blueTeamE1.html" afterPath="$PROJECT_DIR$/blueTeamE1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cron/dailyShoot.php" afterPath="$PROJECT_DIR$/cron/dailyShoot.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cron/startCampaning.php" afterPath="$PROJECT_DIR$/cron/startCampaning.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redirector/redirector1.php" afterPath="$PROJECT_DIR$/redirector/redirector1.php" />
     </list>
     <ignored path="campaning_engine.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,21 +30,21 @@
       <file leaf-file-name="startCampaning.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cron/startCampaning.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="56" column="27" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="e#6#94#0#PHP" expanded="true" />
-                <marker date="1465887405060" expanded="true" signature="364:466" placeholder="SELECT * FRO... campaning" />
-                <marker date="1465887405060" expanded="true" signature="409:465" placeholder="select disti... campaning_logs" />
-                <marker date="1465887405060" expanded="true" signature="770:802" placeholder="SELECT * FRO... emails" />
-                <marker date="1465887405060" expanded="true" signature="770:803" placeholder="SELECT * FRO... emails" />
-                <marker date="1465887405060" expanded="true" signature="1048:1243" placeholder="INSERT INTO campaning_logs" />
-                <marker date="1465887405060" expanded="true" signature="1048:1262" placeholder="INSERT INTO campaning_logs" />
-                <marker date="1465887405060" expanded="true" signature="1048:1291" placeholder="INSERT INTO campaning_logs" />
-                <marker date="1465887405060" expanded="true" signature="1048:1326" placeholder="INSERT INTO campaning_logs" />
-                <marker date="1465887405060" expanded="true" signature="1528:1564" placeholder="SELECT * FRO... mobiles" />
-                <marker date="1465887405060" expanded="true" signature="1528:1595" placeholder="SELECT * FRO... mobiles" />
-                <marker date="1465887405060" expanded="true" signature="1864:2141" placeholder="INSERT INTO campaning_logs" />
+                <marker date="1466106595412" expanded="true" signature="643:745" placeholder="SELECT * FRO... campaning" />
+                <marker date="1466106595412" expanded="true" signature="688:744" placeholder="select disti... campaning_logs" />
+                <marker date="1466106595412" expanded="true" signature="1050:1082" placeholder="SELECT * FRO... emails" />
+                <marker date="1466106595412" expanded="true" signature="1050:1083" placeholder="SELECT * FRO... emails" />
+                <marker date="1466106595412" expanded="true" signature="1249:1444" placeholder="INSERT INTO campaning_logs" />
+                <marker date="1466106595412" expanded="true" signature="1249:1467" placeholder="INSERT INTO campaning_logs" />
+                <marker date="1466106595412" expanded="true" signature="1249:1500" placeholder="INSERT INTO campaning_logs" />
+                <marker date="1466106595412" expanded="true" signature="1249:1538" placeholder="INSERT INTO campaning_logs" />
+                <marker date="1466106595412" expanded="true" signature="1878:1914" placeholder="SELECT * FRO... mobiles" />
+                <marker date="1466106595412" expanded="true" signature="1878:1949" placeholder="SELECT * FRO... mobiles" />
+                <marker date="1466106595412" expanded="true" signature="2165:2453" placeholder="INSERT INTO campaning_logs" />
               </folding>
             </state>
           </provider>
@@ -57,30 +60,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.inc.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/header.inc.php">
+      <file leaf-file-name="redirector1.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/redirector/redirector1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="107" selection-start-line="2" selection-start-column="107" selection-end-line="2" selection-end-column="107" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#6#94#0#PHP" expanded="true" />
+                <marker date="1466134589956" expanded="true" signature="694:832" placeholder="SELECT * FRO... campanig" />
+                <marker date="1466134589956" expanded="true" signature="694:833" placeholder="SELECT * FRO... campaning_logs" />
+                <marker date="1466134589956" expanded="true" signature="694:859" placeholder="SELECT * FRO... campaning_logs" />
+                <marker date="1466134589956" expanded="true" signature="1038:1204" placeholder="UPDATE `camp... " />
+                <marker date="1466134589956" expanded="true" signature="1366:1515" placeholder="UPDATE `camp... " />
+                <marker date="1466134589956" expanded="true" signature="1635:1728" placeholder="UPDATE `camp... " />
+                <marker date="1466134589956" expanded="true" signature="2555:2718" placeholder="UPDATE `camp... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="os_finder.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/library/os_finder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.051194537">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="46" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="redirector1.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/redirector/redirector1.php">
+      <file leaf-file-name="db_connection.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/db_connection.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="144" selection-start-line="39" selection-start-column="144" selection-end-line="39" selection-end-column="144" />
-              <folding>
-                <element signature="e#6#94#0#PHP" expanded="true" />
-                <marker date="1465902937556" expanded="true" signature="610:748" placeholder="SELECT * FRO... campanig" />
-                <marker date="1465902937556" expanded="true" signature="610:749" placeholder="SELECT * FRO... campaning_logs" />
-                <marker date="1465902937556" expanded="true" signature="610:775" placeholder="SELECT * FRO... campaning_logs" />
-                <marker date="1465902937556" expanded="true" signature="954:1117" placeholder="UPDATE `camp... " />
-                <marker date="1465902937556" expanded="true" signature="1277:1426" placeholder="UPDATE `camp... " />
-                <marker date="1465902937556" expanded="true" signature="1546:1639" placeholder="UPDATE `camp... " />
-              </folding>
+            <state vertical-scroll-proportion="-1.875">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="79" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -95,10 +109,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blueTeamE1.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="blueTeamE1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blueTeamE1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.94880545">
+            <state vertical-scroll-proportion="0.0">
               <caret line="561" column="0" selection-start-line="561" selection-start-column="0" selection-end-line="561" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -141,20 +155,16 @@
       <file leaf-file-name="dailyShoot.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cron/dailyShoot.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="email_camp.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/email_camp.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="20" selection-end-column="46" />
+            <state vertical-scroll-proportion="-5.6666665">
+              <caret line="36" column="63" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
               <folding>
-                <marker date="1464762935648" expanded="true" signature="433:541" placeholder="INSERT INTO emails... " />
+                <element signature="e#6#94#0#PHP" expanded="true" />
+                <marker date="1466106595424" expanded="true" signature="643:847" placeholder="SELECT cl.id... campaning_logs" />
+                <marker date="1466106595424" expanded="true" signature="643:870" placeholder="SELECT cl.id... campaning_logs" />
+                <marker date="1466106595424" expanded="true" signature="999:1122" placeholder="UPDATE `camp... " />
+                <marker date="1466106595424" expanded="true" signature="1229:1264" placeholder="SELECT * FRO... mobiles" />
+                <marker date="1466106595424" expanded="true" signature="1489:1522" placeholder="SELECT * FRO... emails" />
+                <marker date="1466106595424" expanded="true" signature="1489:1523" placeholder="SELECT * FRO... emails" />
               </folding>
             </state>
           </provider>
@@ -186,9 +196,10 @@
         <option value="$PROJECT_DIR$/emailTemp.html" />
         <option value="$PROJECT_DIR$/create_camp.php" />
         <option value="$PROJECT_DIR$/getEmails.php" />
-        <option value="$PROJECT_DIR$/cron/startCampaning.php" />
-        <option value="$PROJECT_DIR$/redirector/redirector1.php" />
         <option value="$PROJECT_DIR$/blueTeamE1.html" />
+        <option value="$PROJECT_DIR$/cron/startCampaning.php" />
+        <option value="$PROJECT_DIR$/cron/dailyShoot.php" />
+        <option value="$PROJECT_DIR$/redirector/redirector1.php" />
       </list>
     </option>
   </component>
@@ -230,6 +241,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -348,11 +360,10 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../demoweb" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -525,13 +536,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="27" width="1370" height="743" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -571,6 +582,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="49" column="0" selection-start-line="48" selection-start-column="9" selection-end-line="49" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -612,17 +624,17 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#6#94#0#PHP" expanded="true" />
-            <marker date="1465887405060" expanded="true" signature="364:466" placeholder="SELECT * FRO... campaning" />
-            <marker date="1465887405060" expanded="true" signature="409:465" placeholder="select disti... campaning_logs" />
-            <marker date="1465887405060" expanded="true" signature="770:802" placeholder="SELECT * FRO... emails" />
-            <marker date="1465887405060" expanded="true" signature="770:803" placeholder="SELECT * FRO... emails" />
-            <marker date="1465887405060" expanded="true" signature="1048:1243" placeholder="INSERT INTO campaning_logs" />
-            <marker date="1465887405060" expanded="true" signature="1048:1262" placeholder="INSERT INTO campaning_logs" />
-            <marker date="1465887405060" expanded="true" signature="1048:1291" placeholder="INSERT INTO campaning_logs" />
-            <marker date="1465887405060" expanded="true" signature="1048:1326" placeholder="INSERT INTO campaning_logs" />
-            <marker date="1465887405060" expanded="true" signature="1528:1564" placeholder="SELECT * FRO... mobiles" />
-            <marker date="1465887405060" expanded="true" signature="1528:1595" placeholder="SELECT * FRO... mobiles" />
-            <marker date="1465887405060" expanded="true" signature="1864:2141" placeholder="INSERT INTO campaning_logs" />
+            <marker date="1466106595412" expanded="true" signature="643:745" placeholder="SELECT * FRO... campaning" />
+            <marker date="1466106595412" expanded="true" signature="688:744" placeholder="select disti... campaning_logs" />
+            <marker date="1466106595412" expanded="true" signature="1050:1082" placeholder="SELECT * FRO... emails" />
+            <marker date="1466106595412" expanded="true" signature="1050:1083" placeholder="SELECT * FRO... emails" />
+            <marker date="1466106595412" expanded="true" signature="1249:1444" placeholder="INSERT INTO campaning_logs" />
+            <marker date="1466106595412" expanded="true" signature="1249:1467" placeholder="INSERT INTO campaning_logs" />
+            <marker date="1466106595412" expanded="true" signature="1249:1500" placeholder="INSERT INTO campaning_logs" />
+            <marker date="1466106595412" expanded="true" signature="1249:1538" placeholder="INSERT INTO campaning_logs" />
+            <marker date="1466106595412" expanded="true" signature="1878:1914" placeholder="SELECT * FRO... mobiles" />
+            <marker date="1466106595412" expanded="true" signature="1878:1949" placeholder="SELECT * FRO... mobiles" />
+            <marker date="1466106595412" expanded="true" signature="2165:2453" placeholder="INSERT INTO campaning_logs" />
           </folding>
         </state>
       </provider>
@@ -631,7 +643,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#6#94#0#PHP" expanded="true" />
+            <marker date="1466106595424" expanded="true" signature="643:847" placeholder="SELECT cl.id... campaning_logs" />
+            <marker date="1466106595424" expanded="true" signature="643:870" placeholder="SELECT cl.id... campaning_logs" />
+            <marker date="1466106595424" expanded="true" signature="999:1122" placeholder="UPDATE `camp... " />
+            <marker date="1466106595424" expanded="true" signature="1229:1264" placeholder="SELECT * FRO... mobiles" />
+            <marker date="1466106595424" expanded="true" signature="1489:1522" placeholder="SELECT * FRO... emails" />
+            <marker date="1466106595424" expanded="true" signature="1489:1523" placeholder="SELECT * FRO... emails" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -641,12 +661,13 @@
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="38" />
           <folding>
             <element signature="e#6#94#0#PHP" expanded="true" />
-            <marker date="1465902937556" expanded="true" signature="610:748" placeholder="SELECT * FRO... campanig" />
-            <marker date="1465902937556" expanded="true" signature="610:749" placeholder="SELECT * FRO... campaning_logs" />
-            <marker date="1465902937556" expanded="true" signature="610:775" placeholder="SELECT * FRO... campaning_logs" />
-            <marker date="1465902937556" expanded="true" signature="954:1117" placeholder="UPDATE `camp... " />
-            <marker date="1465902937556" expanded="true" signature="1277:1426" placeholder="UPDATE `camp... " />
-            <marker date="1465902937556" expanded="true" signature="1546:1639" placeholder="UPDATE `camp... " />
+            <marker date="1466134589956" expanded="true" signature="694:832" placeholder="SELECT * FRO... campanig" />
+            <marker date="1466134589956" expanded="true" signature="694:833" placeholder="SELECT * FRO... campaning_logs" />
+            <marker date="1466134589956" expanded="true" signature="694:859" placeholder="SELECT * FRO... campaning_logs" />
+            <marker date="1466134589956" expanded="true" signature="1038:1204" placeholder="UPDATE `camp... " />
+            <marker date="1466134589956" expanded="true" signature="1366:1515" placeholder="UPDATE `camp... " />
+            <marker date="1466134589956" expanded="true" signature="1635:1728" placeholder="UPDATE `camp... " />
+            <marker date="1466134589956" expanded="true" signature="2555:2718" placeholder="UPDATE `camp... " />
           </folding>
         </state>
       </provider>
@@ -669,6 +690,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="49" column="0" selection-start-line="48" selection-start-column="9" selection-end-line="49" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -710,17 +732,17 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#6#94#0#PHP" expanded="true" />
-            <marker date="1465887405060" expanded="true" signature="364:466" placeholder="SELECT * FRO... campaning" />
-            <marker date="1465887405060" expanded="true" signature="409:465" placeholder="select disti... campaning_logs" />
-            <marker date="1465887405060" expanded="true" signature="770:802" placeholder="SELECT * FRO... emails" />
-            <marker date="1465887405060" expanded="true" signature="770:803" placeholder="SELECT * FRO... emails" />
-            <marker date="1465887405060" expanded="true" signature="1048:1243" placeholder="INSERT INTO campaning_logs" />
-            <marker date="1465887405060" expanded="true" signature="1048:1262" placeholder="INSERT INTO campaning_logs" />
-            <marker date="1465887405060" expanded="true" signature="1048:1291" placeholder="INSERT INTO campaning_logs" />
-            <marker date="1465887405060" expanded="true" signature="1048:1326" placeholder="INSERT INTO campaning_logs" />
-            <marker date="1465887405060" expanded="true" signature="1528:1564" placeholder="SELECT * FRO... mobiles" />
-            <marker date="1465887405060" expanded="true" signature="1528:1595" placeholder="SELECT * FRO... mobiles" />
-            <marker date="1465887405060" expanded="true" signature="1864:2141" placeholder="INSERT INTO campaning_logs" />
+            <marker date="1466106595412" expanded="true" signature="643:745" placeholder="SELECT * FRO... campaning" />
+            <marker date="1466106595412" expanded="true" signature="688:744" placeholder="select disti... campaning_logs" />
+            <marker date="1466106595412" expanded="true" signature="1050:1082" placeholder="SELECT * FRO... emails" />
+            <marker date="1466106595412" expanded="true" signature="1050:1083" placeholder="SELECT * FRO... emails" />
+            <marker date="1466106595412" expanded="true" signature="1249:1444" placeholder="INSERT INTO campaning_logs" />
+            <marker date="1466106595412" expanded="true" signature="1249:1467" placeholder="INSERT INTO campaning_logs" />
+            <marker date="1466106595412" expanded="true" signature="1249:1500" placeholder="INSERT INTO campaning_logs" />
+            <marker date="1466106595412" expanded="true" signature="1249:1538" placeholder="INSERT INTO campaning_logs" />
+            <marker date="1466106595412" expanded="true" signature="1878:1914" placeholder="SELECT * FRO... mobiles" />
+            <marker date="1466106595412" expanded="true" signature="1878:1949" placeholder="SELECT * FRO... mobiles" />
+            <marker date="1466106595412" expanded="true" signature="2165:2453" placeholder="INSERT INTO campaning_logs" />
           </folding>
         </state>
       </provider>
@@ -729,7 +751,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#6#94#0#PHP" expanded="true" />
+            <marker date="1466106595424" expanded="true" signature="643:847" placeholder="SELECT cl.id... campaning_logs" />
+            <marker date="1466106595424" expanded="true" signature="643:870" placeholder="SELECT cl.id... campaning_logs" />
+            <marker date="1466106595424" expanded="true" signature="999:1122" placeholder="UPDATE `camp... " />
+            <marker date="1466106595424" expanded="true" signature="1229:1264" placeholder="SELECT * FRO... mobiles" />
+            <marker date="1466106595424" expanded="true" signature="1489:1522" placeholder="SELECT * FRO... emails" />
+            <marker date="1466106595424" expanded="true" signature="1489:1523" placeholder="SELECT * FRO... emails" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -739,12 +769,13 @@
           <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
           <folding>
             <element signature="e#6#94#0#PHP" expanded="true" />
-            <marker date="1465902937556" expanded="true" signature="610:748" placeholder="SELECT * FRO... campanig" />
-            <marker date="1465902937556" expanded="true" signature="610:749" placeholder="SELECT * FRO... campaning_logs" />
-            <marker date="1465902937556" expanded="true" signature="610:775" placeholder="SELECT * FRO... campaning_logs" />
-            <marker date="1465902937556" expanded="true" signature="954:1117" placeholder="UPDATE `camp... " />
-            <marker date="1465902937556" expanded="true" signature="1277:1426" placeholder="UPDATE `camp... " />
-            <marker date="1465902937556" expanded="true" signature="1546:1639" placeholder="UPDATE `camp... " />
+            <marker date="1466134589956" expanded="true" signature="694:832" placeholder="SELECT * FRO... campanig" />
+            <marker date="1466134589956" expanded="true" signature="694:833" placeholder="SELECT * FRO... campaning_logs" />
+            <marker date="1466134589956" expanded="true" signature="694:859" placeholder="SELECT * FRO... campaning_logs" />
+            <marker date="1466134589956" expanded="true" signature="1038:1204" placeholder="UPDATE `camp... " />
+            <marker date="1466134589956" expanded="true" signature="1366:1515" placeholder="UPDATE `camp... " />
+            <marker date="1466134589956" expanded="true" signature="1635:1728" placeholder="UPDATE `camp... " />
+            <marker date="1466134589956" expanded="true" signature="2555:2718" placeholder="UPDATE `camp... " />
           </folding>
         </state>
       </provider>
@@ -774,6 +805,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="49" column="0" selection-start-line="48" selection-start-column="9" selection-end-line="49" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -805,17 +837,17 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#6#94#0#PHP" expanded="true" />
-            <marker date="1465887405060" expanded="true" signature="364:466" placeholder="SELECT * FRO... campaning" />
-            <marker date="1465887405060" expanded="true" signature="409:465" placeholder="select disti... campaning_logs" />
-            <marker date="1465887405060" expanded="true" signature="770:802" placeholder="SELECT * FRO... emails" />
-            <marker date="1465887405060" expanded="true" signature="770:803" placeholder="SELECT * FRO... emails" />
-            <marker date="1465887405060" expanded="true" signature="1048:1243" placeholder="INSERT INTO campaning_logs" />
-            <marker date="1465887405060" expanded="true" signature="1048:1262" placeholder="INSERT INTO campaning_logs" />
-            <marker date="1465887405060" expanded="true" signature="1048:1291" placeholder="INSERT INTO campaning_logs" />
-            <marker date="1465887405060" expanded="true" signature="1048:1326" placeholder="INSERT INTO campaning_logs" />
-            <marker date="1465887405060" expanded="true" signature="1528:1564" placeholder="SELECT * FRO... mobiles" />
-            <marker date="1465887405060" expanded="true" signature="1528:1595" placeholder="SELECT * FRO... mobiles" />
-            <marker date="1465887405060" expanded="true" signature="1864:2141" placeholder="INSERT INTO campaning_logs" />
+            <marker date="1466106595412" expanded="true" signature="643:745" placeholder="SELECT * FRO... campaning" />
+            <marker date="1466106595412" expanded="true" signature="688:744" placeholder="select disti... campaning_logs" />
+            <marker date="1466106595412" expanded="true" signature="1050:1082" placeholder="SELECT * FRO... emails" />
+            <marker date="1466106595412" expanded="true" signature="1050:1083" placeholder="SELECT * FRO... emails" />
+            <marker date="1466106595412" expanded="true" signature="1249:1444" placeholder="INSERT INTO campaning_logs" />
+            <marker date="1466106595412" expanded="true" signature="1249:1467" placeholder="INSERT INTO campaning_logs" />
+            <marker date="1466106595412" expanded="true" signature="1249:1500" placeholder="INSERT INTO campaning_logs" />
+            <marker date="1466106595412" expanded="true" signature="1249:1538" placeholder="INSERT INTO campaning_logs" />
+            <marker date="1466106595412" expanded="true" signature="1878:1914" placeholder="SELECT * FRO... mobiles" />
+            <marker date="1466106595412" expanded="true" signature="1878:1949" placeholder="SELECT * FRO... mobiles" />
+            <marker date="1466106595412" expanded="true" signature="2165:2453" placeholder="INSERT INTO campaning_logs" />
           </folding>
         </state>
       </provider>
@@ -824,7 +856,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#6#94#0#PHP" expanded="true" />
+            <marker date="1466106595424" expanded="true" signature="643:847" placeholder="SELECT cl.id... campaning_logs" />
+            <marker date="1466106595424" expanded="true" signature="643:870" placeholder="SELECT cl.id... campaning_logs" />
+            <marker date="1466106595424" expanded="true" signature="999:1122" placeholder="UPDATE `camp... " />
+            <marker date="1466106595424" expanded="true" signature="1229:1264" placeholder="SELECT * FRO... mobiles" />
+            <marker date="1466106595424" expanded="true" signature="1489:1522" placeholder="SELECT * FRO... emails" />
+            <marker date="1466106595424" expanded="true" signature="1489:1523" placeholder="SELECT * FRO... emails" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -834,12 +874,13 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#6#94#0#PHP" expanded="true" />
-            <marker date="1465902937556" expanded="true" signature="610:748" placeholder="SELECT * FRO... campanig" />
-            <marker date="1465902937556" expanded="true" signature="610:749" placeholder="SELECT * FRO... campaning_logs" />
-            <marker date="1465902937556" expanded="true" signature="610:775" placeholder="SELECT * FRO... campaning_logs" />
-            <marker date="1465902937556" expanded="true" signature="954:1117" placeholder="UPDATE `camp... " />
-            <marker date="1465902937556" expanded="true" signature="1277:1426" placeholder="UPDATE `camp... " />
-            <marker date="1465902937556" expanded="true" signature="1546:1639" placeholder="UPDATE `camp... " />
+            <marker date="1466134589956" expanded="true" signature="694:832" placeholder="SELECT * FRO... campanig" />
+            <marker date="1466134589956" expanded="true" signature="694:833" placeholder="SELECT * FRO... campaning_logs" />
+            <marker date="1466134589956" expanded="true" signature="694:859" placeholder="SELECT * FRO... campaning_logs" />
+            <marker date="1466134589956" expanded="true" signature="1038:1204" placeholder="UPDATE `camp... " />
+            <marker date="1466134589956" expanded="true" signature="1366:1515" placeholder="UPDATE `camp... " />
+            <marker date="1466134589956" expanded="true" signature="1635:1728" placeholder="UPDATE `camp... " />
+            <marker date="1466134589956" expanded="true" signature="2555:2718" placeholder="UPDATE `camp... " />
           </folding>
         </state>
       </provider>
@@ -862,6 +903,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="64" column="46" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -872,24 +914,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/db_connection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sms_camp.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="138" selection-start-line="30" selection-start-column="116" selection-end-line="30" selection-end-column="138" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/os_finder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="0" selection-start-line="48" selection-start-column="9" selection-end-line="49" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -945,35 +973,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cron/startCampaning.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="27" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
-          <folding>
-            <element signature="e#6#94#0#PHP" expanded="true" />
-            <marker date="1465887405060" expanded="true" signature="364:466" placeholder="SELECT * FRO... campaning" />
-            <marker date="1465887405060" expanded="true" signature="409:465" placeholder="select disti... campaning_logs" />
-            <marker date="1465887405060" expanded="true" signature="770:802" placeholder="SELECT * FRO... emails" />
-            <marker date="1465887405060" expanded="true" signature="770:803" placeholder="SELECT * FRO... emails" />
-            <marker date="1465887405060" expanded="true" signature="1048:1243" placeholder="INSERT INTO campaning_logs" />
-            <marker date="1465887405060" expanded="true" signature="1048:1262" placeholder="INSERT INTO campaning_logs" />
-            <marker date="1465887405060" expanded="true" signature="1048:1291" placeholder="INSERT INTO campaning_logs" />
-            <marker date="1465887405060" expanded="true" signature="1048:1326" placeholder="INSERT INTO campaning_logs" />
-            <marker date="1465887405060" expanded="true" signature="1528:1564" placeholder="SELECT * FRO... mobiles" />
-            <marker date="1465887405060" expanded="true" signature="1528:1595" placeholder="SELECT * FRO... mobiles" />
-            <marker date="1465887405060" expanded="true" signature="1864:2141" placeholder="INSERT INTO campaning_logs" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cron/dailyShoot.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/header.inc.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -987,22 +986,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="60" column="18" selection-start-line="60" selection-start-column="3" selection-end-line="60" selection-end-column="18" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redirector/redirector1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="144" selection-start-line="39" selection-start-column="144" selection-end-line="39" selection-end-column="144" />
-          <folding>
-            <element signature="e#6#94#0#PHP" expanded="true" />
-            <marker date="1465902937556" expanded="true" signature="610:748" placeholder="SELECT * FRO... campanig" />
-            <marker date="1465902937556" expanded="true" signature="610:749" placeholder="SELECT * FRO... campaning_logs" />
-            <marker date="1465902937556" expanded="true" signature="610:775" placeholder="SELECT * FRO... campaning_logs" />
-            <marker date="1465902937556" expanded="true" signature="954:1117" placeholder="UPDATE `camp... " />
-            <marker date="1465902937556" expanded="true" signature="1277:1426" placeholder="UPDATE `camp... " />
-            <marker date="1465902937556" expanded="true" signature="1546:1639" placeholder="UPDATE `camp... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1026,7 +1009,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blueTeamE1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.94880545">
+        <state vertical-scroll-proportion="0.0">
           <caret line="561" column="0" selection-start-line="561" selection-start-column="0" selection-end-line="561" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1048,6 +1031,76 @@
             <marker date="1466059747432" expanded="true" signature="318941:319003" placeholder="..." />
             <marker date="1466059747432" expanded="true" signature="318978:319003" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cron/startCampaning.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#94#0#PHP" expanded="true" />
+            <marker date="1466106595412" expanded="true" signature="643:745" placeholder="SELECT * FRO... campaning" />
+            <marker date="1466106595412" expanded="true" signature="688:744" placeholder="select disti... campaning_logs" />
+            <marker date="1466106595412" expanded="true" signature="1050:1082" placeholder="SELECT * FRO... emails" />
+            <marker date="1466106595412" expanded="true" signature="1050:1083" placeholder="SELECT * FRO... emails" />
+            <marker date="1466106595412" expanded="true" signature="1249:1444" placeholder="INSERT INTO campaning_logs" />
+            <marker date="1466106595412" expanded="true" signature="1249:1467" placeholder="INSERT INTO campaning_logs" />
+            <marker date="1466106595412" expanded="true" signature="1249:1500" placeholder="INSERT INTO campaning_logs" />
+            <marker date="1466106595412" expanded="true" signature="1249:1538" placeholder="INSERT INTO campaning_logs" />
+            <marker date="1466106595412" expanded="true" signature="1878:1914" placeholder="SELECT * FRO... mobiles" />
+            <marker date="1466106595412" expanded="true" signature="1878:1949" placeholder="SELECT * FRO... mobiles" />
+            <marker date="1466106595412" expanded="true" signature="2165:2453" placeholder="INSERT INTO campaning_logs" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cron/dailyShoot.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.6666665">
+          <caret line="36" column="63" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
+          <folding>
+            <element signature="e#6#94#0#PHP" expanded="true" />
+            <marker date="1466106595424" expanded="true" signature="643:847" placeholder="SELECT cl.id... campaning_logs" />
+            <marker date="1466106595424" expanded="true" signature="643:870" placeholder="SELECT cl.id... campaning_logs" />
+            <marker date="1466106595424" expanded="true" signature="999:1122" placeholder="UPDATE `camp... " />
+            <marker date="1466106595424" expanded="true" signature="1229:1264" placeholder="SELECT * FRO... mobiles" />
+            <marker date="1466106595424" expanded="true" signature="1489:1522" placeholder="SELECT * FRO... emails" />
+            <marker date="1466106595424" expanded="true" signature="1489:1523" placeholder="SELECT * FRO... emails" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/db_connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.875">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redirector/redirector1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#94#0#PHP" expanded="true" />
+            <marker date="1466134589956" expanded="true" signature="694:832" placeholder="SELECT * FRO... campanig" />
+            <marker date="1466134589956" expanded="true" signature="694:833" placeholder="SELECT * FRO... campaning_logs" />
+            <marker date="1466134589956" expanded="true" signature="694:859" placeholder="SELECT * FRO... campaning_logs" />
+            <marker date="1466134589956" expanded="true" signature="1038:1204" placeholder="UPDATE `camp... " />
+            <marker date="1466134589956" expanded="true" signature="1366:1515" placeholder="UPDATE `camp... " />
+            <marker date="1466134589956" expanded="true" signature="1635:1728" placeholder="UPDATE `camp... " />
+            <marker date="1466134589956" expanded="true" signature="2555:2718" placeholder="UPDATE `camp... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/os_finder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.051194537">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="46" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
