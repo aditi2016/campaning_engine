@@ -11,7 +11,7 @@ function phoneNumbervalidation($mobile){
         return false;
 }
 
-if (($handle = fopen("data9.csv", "r")) !== FALSE) {
+if (($handle = fopen("data10.csv", "r")) !== FALSE) {
 	
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
 		$email_id = 0;
