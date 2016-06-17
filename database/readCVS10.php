@@ -1,6 +1,6 @@
 <?php
 
-$$db_handle = mysqli_connect("localhost","root","redhat@11111p","campaning_engine");
+$db_handle = mysqli_connect("localhost","root","redhat@11111p","campaning_engine");
 $date = date("y-m-d H:i:s");
 
 function phoneNumbervalidation($mobile){
@@ -53,7 +53,7 @@ if (($handle = fopen("data10.csv", "r")) !== FALSE) {
 										VALUES ('$mobile_id', '$email_id', '$date');");
 		}
 	
-         echo  $data[4]." ".$$email." ".$mobile."\n";  //echo "name:". $data[0] . " mobile: " . $data[1] . " email: " . $data[2] . "<br />\n";
+         echo  $data[4]." ".$email." ".$mobile."\n";  //echo "name:". $data[0] . " mobile: " . $data[1] . " email: " . $data[2] . "<br />\n";
         //}
     }
     fclose($handle);
