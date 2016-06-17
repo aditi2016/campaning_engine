@@ -100,4 +100,7 @@ while ($camp = mysqli_fetch_assoc($result)) {
 
     }
 
+
+    sendMail("rahul_lahoria@yahoo.com", "camp got over", json_encode($camp));
+
 }
