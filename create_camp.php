@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if($id == 0 ){
         echo  "Alert! Error occurred<br/>";
-        echo("Error description: " . mysqli_error($con));
+        echo("Error description: " . mysqli_error($db));
         die();
     }
 }
