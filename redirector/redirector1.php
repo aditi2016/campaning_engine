@@ -5,15 +5,15 @@
  * Date: 5/31/16
  * Time: 12:23 AM
  */
-
+// example url: http://shatkonlabs.com/d-2
 require_once "../library/os_finder.php";
+
+$db = mysqli_connect("127.0.0.1", "root", "redhat@11111p", "campaning_engine");
 
 $header = json_encode($_SERVER);
 $url = $_SERVER[REQUEST_URI];
 $os = getOS();
 $ip = $_SERVER[REMOTE_ADDR];
-
-$method = $_SERVER['REQUEST_METHOD'];
 
 $fist = explode("?", $_SERVER[REQUEST_URI   ]);
 $route = explode("/", $fist[0]);
@@ -37,12 +37,12 @@ if($details[0] == "d") {
 
 //insert in campaning log
 
-    $sql = "UPDATE `campaning_engine`.`campaning_logs` SET `status` = 'open', ip = '" . $ip . "', os = '" . $os . "', header = '" . $header . "' WHERE `campaning_logs`.`id` = " . $campaningLogId . ";";
+    $sql = "UPDATE `campaning_engine`.`campaning_logs` SET `status` = 'clicked', ip = '" . $ip . "', os = '" . $os . "', header = '" . $header . "' WHERE `campaning_logs`.`id` = " . $campaningLogId . ";";
     $result = mysqli_query($db, $sql);
 
 
 //insert into mobiles or emails
-
+/*
     if ($campDetails['type'] == "sms") {
 
 
@@ -56,11 +56,42 @@ if($details[0] == "d") {
 
         $sql = "UPDATE `campaning_engine`.`emails` SET `end_time` = '" . $endTime . "' WHERE `emails`.`id` = " . $campDetails['mobile_email_id'] . ";";
         $result = mysqli_query($db, $sql);
-    }
+    }*/
 
 
     header("location: $forwardURL"); // will relocate to specified location
 
     die();
+//get user gps location
+/*
+ *  <script>
+var x = document.getElementById("demo");
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude +
+    "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+ *
+ *
+ * */
+} elseif ($details[0] == "i") {
+
+    $campaningLogId = $details[1];
+    $campaningLogId = mysqli_real_escape_string($db, $campaningLogId);
+
+//insert in campaning log
+
+    $sql = "UPDATE `campaning_engine`.`campaning_logs` SET `status` = 'open', ip = '" . $ip . "', os = '" . $os . "', header = '" . $header . "' WHERE `campaning_logs`.`id` = " . $campaningLogId . ";";
+    $result = mysqli_query($db, $sql);
+
+    die();
+
 }
 
