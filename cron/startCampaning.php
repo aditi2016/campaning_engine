@@ -16,7 +16,7 @@ require_once "../config/db_connection.php";
 
 //replace url
 function putIMGUrl($text, $url){
-    return str_replace("IMGURL", $url, $text);
+    return str_replace("IMGSRC", $url, $text);
 }
 
 //geting url
@@ -72,7 +72,7 @@ while ($camp = mysqli_fetch_assoc($result)) {
         $inserted = mysqli_query($db, $sql);
         $campLogId = mysqli_insert_id($db);
 
-        sendMail($email['email'], $camp['email_subject'], getText1($campLogId, $camp['email_body']));
+        sendMail($email['email'], $camp['email_subject'], getText1($campLogId, base64_decode($camp['email_body'])));
     }
 
 

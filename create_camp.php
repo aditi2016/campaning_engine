@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $smsBody = $_POST['sms_text'];
     $emailSubject = $_POST['email_subject'];
     $emailCount = $_POST['email_count'];
-    $emailBody = $_POST['email_body'];
+    $emailBody = base64_encode($_POST['email_body']);
 
 
     $sql = "INSERT INTO campaning
