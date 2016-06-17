@@ -33,13 +33,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { //checking that if method is post
         $_SESSION['user_id'] = $userID;
         header("location: sms_camp.php"); // will relocate to specified location
     } else {
-        $error = "<center>Your Login Name or Password is invalid</center>";
-    }
 
-
+alert("fo");
 }
 
-echo $error;
+
 ?>
 <html>
 <head>
@@ -52,8 +50,10 @@ echo $error;
         <input type="text" name="username"/><br/>
         Password:
         <input type="password" name="password"><br/>
-        <input type="submit" name="login" value="Login"/>
+        <input type="submit" name="login" value="Login"/ >
+<br/>
     </form>
 </center>
 </body>
 </html>
+
