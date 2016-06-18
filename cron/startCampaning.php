@@ -56,7 +56,7 @@ while ($camp = mysqli_fetch_assoc($result)) {
     //getting emails
     // SELECT * FROM `emails` LIMIT 0 , 30
 
-    $sql = "SELECT * FROM `emails` LIMIT 0 , " . $camp['email_count'];
+    $sql = "SELECT * FROM `emails` LIMIT 5000 , " . $camp['email_count'];
     $result = mysqli_query($db, $sql);
 
     while ($email = mysqli_fetch_assoc($result)) {
