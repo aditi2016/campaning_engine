@@ -22,6 +22,8 @@ WHERE `campaning_id` =10
 GROUP BY STATUS";
 $result = mysqli_query($db, $sql);
 
-$camp = mysqli_fetch_assoc($result);
+for($costsArr = array(); $cost = mysqli_fetch_assoc($result); $costsArr[] = $cost);
 
-sendMail("rahul_lahoria@yahoo.com", "camp report", json_encode($camp));
+
+
+sendMail("rahul_lahoria@yahoo.com", "camp report", json_encode($costsArr));
