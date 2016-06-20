@@ -86,6 +86,8 @@ while ($email = mysqli_fetch_assoc($result)){
 
     $newStatus = verifyEmail($email['email'], "info@blueteam.in");
 
+    echo $email['email'] . " is ". $newStatus;
+
     $sql = "UPDATE `campaning_engine`.`emails` SET `status` = '".$newStatus."' WHERE `emails`.`id` = " . $email['id'] . ";";
     $r = mysqli_query($db, $sql);
 
