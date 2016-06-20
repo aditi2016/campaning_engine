@@ -9,6 +9,7 @@
 require_once "../config/db_connection.php";
 
 function verifyEmail($toemail, $fromemail, $getdetails = false){
+    $details = "";
     $email_arr = explode("@", $toemail);
     $domain = array_slice($email_arr, -1);
     $domain = $domain[0];
@@ -41,10 +42,12 @@ function verifyEmail($toemail, $fromemail, $getdetails = false){
         }
     }
 
+
     $connect = @fsockopen($mx_ip, 25);
     if($connect){
         if(preg_match("/^220/i", $out = fgets($connect, 1024))){
             fputs ($connect , "HELO $mx_ip\r\n");
+
             $out = fgets ($connect, 1024);
             $details .= $out."\n";
 
