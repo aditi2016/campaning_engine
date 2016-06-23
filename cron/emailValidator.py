@@ -6,10 +6,10 @@ from validate_email import validate_email
 
 
 def validateEmailId( email ):
-  if validate_email(email) == false and validate_email(email,check_mx=True) == false and validate_email(email,verify=True) == false:
-    return false
+  if validate_email(email) == False and validate_email(email,check_mx=True) == False and validate_email(email,verify=True) == False:
+    return False
       
-  return true
+  return True
 
 db = MySQLdb.connect("localhost","root","redhat@11111p","campaning_engine" )
 
@@ -25,10 +25,10 @@ try:
    for row in results:
       id = row[0]
       email = row[1]
-      newStatus = "not done"
-      #newStatus =  validateEmailId ( email )
+      #newStatus = "not done"
+      newStatus =  validateEmailId ( email )
       # Now print fetched result
-      print "id=%s,email=%s,new status=%s" % \
+      print "id=%s,email=%s,new status=%r" % \
              (id, email, newStatus )
 except Exception, err:
    print Exception, err
