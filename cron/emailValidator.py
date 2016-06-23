@@ -6,7 +6,7 @@ from validate_email import validate_email
 
 
 def validateEmailId( email ):
-  if !validate_email(email) and !validate_email(email,check_mx=True) and !validate_email(email,verify=True):
+  if validate_email(email) == false and validate_email(email,check_mx=True) == false and validate_email(email,verify=True) == false:
     return false
       
   return true
