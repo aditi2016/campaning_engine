@@ -25,7 +25,7 @@ try:
    for row in results:
       id = row[0]
       email = row[1]
-      newStatus =  validateEmailId ( email )
+      #newStatus =  validateEmailId ( email )
       # Now print fetched result
       print "id=%s,email=%s,new status=%s" % \
              (id, email, newStatus )
