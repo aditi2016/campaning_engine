@@ -28,8 +28,7 @@ try:
       email = row[1]
       #newStatus = "not done"
       newStatus =  validateEmailId ( email )
-      sql = "UPDATE emails SET status = '%s'
-                                WHERE id = '%d'" % (newStatus,id)
+      sql = "UPDATE emails SET status = '%s' WHERE id = '%d'" % (newStatus,id)
       cursor.execute(sql)
       db.commit()
       # Now print fetched result
