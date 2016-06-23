@@ -29,7 +29,8 @@ try:
       # Now print fetched result
       print "id=%s,email=%s,new status=%s" % \
              (id, email, newStatus )
-except:
+except Exception, err:
+   print Exception, err
    print "Error: unable to fecth data"
 
 # disconnect from server
