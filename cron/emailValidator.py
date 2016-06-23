@@ -6,7 +6,7 @@ from validate_email import validate_email
 
 
 def validateEmailId( email ):
-  if validate_email(email) == False and validate_email(email,check_mx=True) == False and validate_email(email,verify=True) == False:
+  if validate_email(email) != True and validate_email(email,check_mx=True) != True and validate_email(email,verify=True) != True:
     return "invalid"
       
   return "valid"
@@ -15,7 +15,7 @@ db = MySQLdb.connect("localhost","root","redhat@11111p","campaning_engine" )
 
 cursor = db.cursor()
 
-sql = "SELECT * FROM emails where status != 'valid' "
+sql = "SELECT * FROM emails where 1 "
 
 
 try:

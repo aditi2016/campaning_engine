@@ -136,8 +136,8 @@
       <file leaf-file-name="emailValidator.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cron/emailValidator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.63114756">
-              <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.09016393">
+              <caret line="8" column="128" selection-start-line="8" selection-start-column="128" selection-end-line="8" selection-end-column="128" />
               <folding />
             </state>
           </provider>
@@ -572,7 +572,13 @@
       <option name="project" value="LOCAL" />
       <updated>1466659990710</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="sadded cron">
+      <created>1466660101182</created>
+      <option name="number" value="00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1466660101182</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1126,8 +1132,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cron/emailValidator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63114756">
-          <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.09016393">
+          <caret line="8" column="128" selection-start-line="8" selection-start-column="128" selection-end-line="8" selection-end-column="128" />
           <folding />
         </state>
       </provider>
