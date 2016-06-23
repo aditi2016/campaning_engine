@@ -7,15 +7,16 @@ from validate_email import validate_email
 
 def validateEmailId( email ):
   if validate_email(email) == False and validate_email(email,check_mx=True) == False and validate_email(email,verify=True) == False:
-    return False
+    return "invalid"
       
-  return True
+  return "valid"
 
 db = MySQLdb.connect("localhost","root","redhat@11111p","campaning_engine" )
 
 cursor = db.cursor()
 
 sql = "SELECT * FROM emails where status != 'valid' "
+
 
 try:
    # Execute the SQL command
@@ -27,6 +28,10 @@ try:
       email = row[1]
       #newStatus = "not done"
       newStatus =  validateEmailId ( email )
+      sql = "UPDATE emails SET status = '%s'
+                                WHERE id = '%d'" % (newStatus,id)
+      cursor.execute(sql)
+      db.commit()
       # Now print fetched result
       print "id=%s,email=%s,new status=%r" % \
              (id, email, newStatus )
