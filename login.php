@@ -36,6 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { //checking that if method is post
 
         alert("fo");
     }
+}
 
 
 ?>
@@ -45,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { //checking that if method is post
     <title>login page</title>
 </head>
 <body>
-<center>
+<div style="text-align: center;">
     <form method="post" action="#">
         Username:
         <input type="text" name="username"/><br/>
@@ -54,6 +55,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { //checking that if method is post
         <input type="submit" name="login" value="Login"/ >
         <br/>
     </form>
-</center>
+</div>
 </body>
 </html>
