@@ -25,7 +25,7 @@ $userID = $_SESSION['user_id'];
 
 
 
-$sql = "SELECT * FROM `words` WHERE type = 'new'" ;
+$sql = "SELECT * FROM `words` WHERE type = 'new' limit 0,100" ;
 $result = mysqli_query($db, $sql);
 
 while ($word = mysqli_fetch_assoc($result)){
