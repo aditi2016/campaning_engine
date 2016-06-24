@@ -33,7 +33,7 @@ while ($word = mysqli_fetch_assoc($result)){
     echo $word['word']
         . "&nbsp &nbsp &nbsp <a href='address_class.php?id=".$word['id']."&type=economic' >economic</a> &nbsp &nbsp &nbsp"
         . "<a href='address_class.php?id=".$word['id']."&type=business' >business</a><br/> &nbsp &nbsp &nbsp "
-        . "<a href='address_class.php?id=".$word['id']."&type=ignore' >Ignore</a><br/> &nbsp &nbsp &nbsp ";
+        . "<a href='address_class.php?id=".$word['id']."&type=ignore' >Ignore</a><br/> ";
 
 
 
