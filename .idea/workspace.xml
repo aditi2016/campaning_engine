@@ -109,14 +109,14 @@
       <file leaf-file-name="address_class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/address_class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7696246">
-              <caret line="35" column="86" selection-start-line="35" selection-start-column="86" selection-end-line="35" selection-end-column="86" />
+            <state vertical-scroll-proportion="0.7440273">
+              <caret line="34" column="85" selection-start-line="34" selection-start-column="85" selection-end-line="34" selection-end-column="85" />
               <folding>
                 <element signature="e#6#94#0#PHP" expanded="true" />
-                <marker date="1466753576512" expanded="true" signature="175:247" placeholder="update words... " />
-                <marker date="1466753576512" expanded="true" signature="181:247" placeholder="SELECT * FRO... words" />
-                <marker date="1466753576512" expanded="true" signature="416:456" placeholder="SELECT * FRO... words" />
-                <marker date="1466753576512" expanded="true" signature="416:468" placeholder="SELECT * FRO... words" />
+                <marker date="1466753620476" expanded="true" signature="175:247" placeholder="update words... " />
+                <marker date="1466753620476" expanded="true" signature="181:247" placeholder="SELECT * FRO... words" />
+                <marker date="1466753620476" expanded="true" signature="416:456" placeholder="SELECT * FRO... words" />
+                <marker date="1466753620476" expanded="true" signature="416:468" placeholder="SELECT * FRO... words" />
               </folding>
             </state>
           </provider>
@@ -650,7 +650,13 @@
       <option name="project" value="LOCAL" />
       <updated>1466753519633</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="sadded cron">
+      <created>1466753588051</created>
+      <option name="number" value="00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1466753588051</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1192,14 +1198,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/address_class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7696246">
-          <caret line="35" column="86" selection-start-line="35" selection-start-column="86" selection-end-line="35" selection-end-column="86" />
+        <state vertical-scroll-proportion="0.7440273">
+          <caret line="34" column="85" selection-start-line="34" selection-start-column="85" selection-end-line="34" selection-end-column="85" />
           <folding>
             <element signature="e#6#94#0#PHP" expanded="true" />
-            <marker date="1466753576512" expanded="true" signature="175:247" placeholder="update words... " />
-            <marker date="1466753576512" expanded="true" signature="181:247" placeholder="SELECT * FRO... words" />
-            <marker date="1466753576512" expanded="true" signature="416:456" placeholder="SELECT * FRO... words" />
-            <marker date="1466753576512" expanded="true" signature="416:468" placeholder="SELECT * FRO... words" />
+            <marker date="1466753620476" expanded="true" signature="175:247" placeholder="update words... " />
+            <marker date="1466753620476" expanded="true" signature="181:247" placeholder="SELECT * FRO... words" />
+            <marker date="1466753620476" expanded="true" signature="416:456" placeholder="SELECT * FRO... words" />
+            <marker date="1466753620476" expanded="true" signature="416:468" placeholder="SELECT * FRO... words" />
           </folding>
         </state>
       </provider>
