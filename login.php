@@ -1,7 +1,8 @@
 <?php
 
 session_start();
-if(isset($_SESSION['user_id']))
+
+if (isset($_SESSION['user_id']))
     header("location: sms_camp.php");
 
 require_once "config/db_connection.php";
@@ -24,7 +25,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { //checking that if method is post
     $userID = $userDetails['id'];
 
 
-
     $count = mysqli_num_rows($result); //counting number of rows
 
     // If result matched $myusername and $mypassword, table row must be 1 row
@@ -34,14 +34,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { //checking that if method is post
         header("location: sms_camp.php"); // will relocate to specified location
     } else {
 
-alert("fo");
-}
+        alert("fo");
+    }
 
 
 ?>
+
 <html>
 <head>
-<title>login page</title>
+    <title>login page</title>
 </head>
 <body>
 <center>
@@ -51,9 +52,8 @@ alert("fo");
         Password:
         <input type="password" name="password"><br/>
         <input type="submit" name="login" value="Login"/ >
-<br/>
+        <br/>
     </form>
 </center>
 </body>
 </html>
-
