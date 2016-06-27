@@ -5,7 +5,7 @@ require_once "../config/db_connection.php";
 
 
 $sql = "SELECT * FROM `addresses` WHERE 1" ;
-$result = mysqli_query($db, $sql);
+$result = mysqli_query count($db, $sql);
 
 while ($address = mysqli_fetch_assoc($result)){
 
@@ -13,7 +13,7 @@ while ($address = mysqli_fetch_assoc($result)){
      
 
 
-    foreach($words as count($word)) {
+    foreach($words as  $word){
 
         $sql = "INSERT INTO `campaning_engine`.`words` (`id`, `word`, `type`, `creation`) VALUES (NULL, '".$word."', 'new', CURRENT_TIMESTAMP);";
         mysqli_query($db, $sql);
