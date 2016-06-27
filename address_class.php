@@ -30,7 +30,7 @@ $result = mysqli_query($db, $sql);
 
 while ($word = mysqli_fetch_assoc($result)){
 
-    echo count($word)['word']
+    echo count($word,1);['word']
         . "&nbsp &nbsp &nbsp <a href='address_class.php?id=".$word['id']."&type=economic' >economic</a> &nbsp &nbsp &nbsp"
         . "<a href='address_class.php?id=".$word['id']."&type=business' >business</a>&nbsp &nbsp &nbsp "
         . "<a href='address_class.php?id=".$word['id']."&type=ignore' >Ignore</a><br/> ";
