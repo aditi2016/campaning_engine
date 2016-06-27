@@ -309,13 +309,13 @@
 		 */
 		_latLng: function(latLng) {
 			if ( !latLng ) {
-				return new google.maps.LatLng(0.0, 0.0);
+				return new google.maps.LatLng(28.454779, 77.056578);
 			}
 			if ( latLng instanceof google.maps.LatLng ) {
-				return latLng;
+				return new google.maps.LatLng(28.454779, 77.056578);
 			} else {
 				latLng = latLng.replace(/ /g,'').split(',');
-				return new google.maps.LatLng(latLng[0], latLng[1]);
+				return new google.maps.LatLng(28.454779, 77.056578);
 			}
 		},
 		
