@@ -61,6 +61,13 @@ while ($camp = mysqli_fetch_assoc($result)) {
 
     while ($email = mysqli_fetch_assoc($result)) {
 
+        $sql = "INSERT INTO `campaning_engine`.`EmailAddressTracker`
+            (`EmailAddress`, `EncodedFROM`)
+              VALUES ('".$email['email']."', '".md5($email['email'])."');";
+
+        //echo $sql;
+        $inserted = mysqli_query($db, $sql);
+
         //insert campaning_log
 
         $sql = "INSERT
