@@ -13,9 +13,12 @@ function sendMail($to, $subject, $message)
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
+    $md5To = md5($to);
     // More headers
-    $headers .= 'From: <no-reply@blueteam.in>' . "\r\n";
+    $headers .= 'From: <'.$md5To.'@bounces.blueteam.in>' . "\r\n";
     //$headers .= 'Cc: myboss@example.com' . "\r\n";
 
-    mail($to, $subject, $message, $headers);
+
+
+    mail($to, $subject, $message, $headers, '-f '.$md5To);
 }
