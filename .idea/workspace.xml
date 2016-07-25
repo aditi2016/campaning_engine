@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3eec4a00-6028-4870-b467-575f01178c68" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icard.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cron/startCampaning.php" afterPath="$PROJECT_DIR$/cron/startCampaning.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/sendEmail.php" afterPath="$PROJECT_DIR$/library/sendEmail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blueTeamE1.html" afterPath="$PROJECT_DIR$/blueTeamE1.html" />
     </list>
     <ignored path="campaning_engine.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,38 +26,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="db_connection.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/db_connection.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sendEmail.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/sendEmail.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.625">
-              <caret line="22" column="78" selection-start-line="22" selection-start-column="78" selection-end-line="22" selection-end-column="78" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="emailValidator.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cron/emailValidator.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="84" selection-end-column="45" />
-              <folding>
-                <element signature="e#6#93#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="create_camp.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/create_camp.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -108,10 +76,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="startCampaning.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="startCampaning.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cron/startCampaning.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17918089">
+            <state vertical-scroll-proportion="0.0">
               <caret line="58" column="66" selection-start-line="58" selection-start-column="66" selection-end-line="58" selection-end-column="66" />
               <folding>
                 <marker date="1468409733744" expanded="true" signature="953:1055" placeholder="SELECT * FRO... campaning" />
@@ -121,6 +89,68 @@
                 <marker date="1468409733744" expanded="true" signature="1843:2132" placeholder="INSERT INTO campaning_logs" />
                 <marker date="1468409733744" expanded="true" signature="2488:2559" placeholder="SELECT * FRO... mobiles" />
                 <marker date="1468409733744" expanded="true" signature="2775:3063" placeholder="INSERT INTO campaning_logs" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="emailTemp.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/emailTemp.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="260" column="26" selection-start-line="260" selection-start-column="26" selection-end-line="260" selection-end-column="26" />
+              <folding>
+                <marker date="1466223566660" expanded="true" signature="10604:10694" placeholder="..." />
+                <marker date="1466223566660" expanded="true" signature="10760:10850" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blueTeamE1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blueTeamE1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="601" column="89" selection-start-line="0" selection-start-column="0" selection-end-line="623" selection-end-column="14" />
+              <folding>
+                <element signature="e#315975#318775#0" expanded="false" />
+                <marker date="1468414267268" expanded="true" signature="311266:311325" placeholder="..." />
+                <marker date="1468414267268" expanded="true" signature="311287:311325" placeholder="..." />
+                <marker date="1468414267268" expanded="true" signature="311312:311325" placeholder="..." />
+                <marker date="1468414267268" expanded="true" signature="312213:312308" placeholder="..." />
+                <marker date="1468414267268" expanded="true" signature="312246:312308" placeholder="..." />
+                <marker date="1468414267268" expanded="true" signature="312283:312308" placeholder="..." />
+                <marker date="1468414267268" expanded="true" signature="318927:319022" placeholder="..." />
+                <marker date="1468414267268" expanded="true" signature="318960:319022" placeholder="..." />
+                <marker date="1468414267268" expanded="true" signature="318997:319022" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="icard.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/icard.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.84641635">
+              <caret line="72" column="7" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#b#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -176,7 +206,6 @@
         <option value="$PROJECT_DIR$/getEmails.php" />
         <option value="$PROJECT_DIR$/cron/dailyShoot.php" />
         <option value="$PROJECT_DIR$/redirector/redirector1.php" />
-        <option value="$PROJECT_DIR$/blueTeamE1.html" />
         <option value="$PROJECT_DIR$/create_camp.php" />
         <option value="$PROJECT_DIR$/cron/reports.php" />
         <option value="$PROJECT_DIR$/cron/emailValidator.php" />
@@ -189,6 +218,8 @@
         <option value="$PROJECT_DIR$/config/db_connection.php" />
         <option value="$PROJECT_DIR$/library/sendEmail.php" />
         <option value="$PROJECT_DIR$/cron/startCampaning.php" />
+        <option value="$PROJECT_DIR$/blueTeamE1.html" />
+        <option value="$PROJECT_DIR$/icard.html" />
       </list>
     </option>
   </component>
@@ -229,8 +260,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -307,6 +336,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -360,12 +391,6 @@
       <created>1464634190553</created>
       <option name="number" value="Default" />
       <updated>1464634190553</updated>
-    </task>
-    <task id="LOCAL-00004" summary="added forward_url">
-      <created>1464760130056</created>
-      <option name="number" value="00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1464760130056</updated>
     </task>
     <task id="LOCAL-00005" summary="added mysql error">
       <created>1464761019908</created>
@@ -655,7 +680,13 @@
       <option name="project" value="LOCAL" />
       <updated>1467970651507</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="sadded cron">
+      <created>1468409739594</created>
+      <option name="number" value="00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1468409739595</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -705,21 +736,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cron/dailyShoot.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="43" />
-          <folding>
-            <marker date="1466106595424" expanded="true" signature="643:847" placeholder="SELECT cl.id... campaning_logs" />
-            <marker date="1466106595424" expanded="true" signature="643:870" placeholder="SELECT cl.id... campaning_logs" />
-            <marker date="1466106595424" expanded="true" signature="999:1122" placeholder="UPDATE `camp... " />
-            <marker date="1466106595424" expanded="true" signature="1229:1264" placeholder="SELECT * FRO... mobiles" />
-            <marker date="1466106595424" expanded="true" signature="1489:1522" placeholder="SELECT * FRO... emails" />
-            <marker date="1466106595424" expanded="true" signature="1489:1523" placeholder="SELECT * FRO... emails" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/redirector/redirector1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -925,13 +941,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emailTemp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="243" column="37" selection-start-line="0" selection-start-column="0" selection-end-line="805" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/getEmails.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -967,13 +976,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="46" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blueTeamE1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="474" column="60" selection-start-line="0" selection-start-column="0" selection-end-line="628" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1016,15 +1018,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/library/sendEmail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625">
+        <state vertical-scroll-proportion="0.0">
           <caret line="22" column="78" selection-start-line="22" selection-start-column="78" selection-end-line="22" selection-end-column="78" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1032,9 +1032,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="84" selection-end-column="45" />
-          <folding>
-            <element signature="e#6#93#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1105,7 +1102,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cron/startCampaning.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17918089">
+        <state vertical-scroll-proportion="0.0">
           <caret line="58" column="66" selection-start-line="58" selection-start-column="66" selection-end-line="58" selection-end-column="66" />
           <folding>
             <marker date="1468409733744" expanded="true" signature="953:1055" placeholder="SELECT * FRO... campaning" />
@@ -1115,6 +1112,62 @@
             <marker date="1468409733744" expanded="true" signature="1843:2132" placeholder="INSERT INTO campaning_logs" />
             <marker date="1468409733744" expanded="true" signature="2488:2559" placeholder="SELECT * FRO... mobiles" />
             <marker date="1468409733744" expanded="true" signature="2775:3063" placeholder="INSERT INTO campaning_logs" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emailTemp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="260" column="26" selection-start-line="260" selection-start-column="26" selection-end-line="260" selection-end-column="26" />
+          <folding>
+            <marker date="1466223566660" expanded="true" signature="10604:10694" placeholder="..." />
+            <marker date="1466223566660" expanded="true" signature="10760:10850" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blueTeamE1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="601" column="89" selection-start-line="0" selection-start-column="0" selection-end-line="623" selection-end-column="14" />
+          <folding>
+            <element signature="e#315975#318775#0" expanded="false" />
+            <marker date="1468414267268" expanded="true" signature="311266:311325" placeholder="..." />
+            <marker date="1468414267268" expanded="true" signature="311287:311325" placeholder="..." />
+            <marker date="1468414267268" expanded="true" signature="311312:311325" placeholder="..." />
+            <marker date="1468414267268" expanded="true" signature="312213:312308" placeholder="..." />
+            <marker date="1468414267268" expanded="true" signature="312246:312308" placeholder="..." />
+            <marker date="1468414267268" expanded="true" signature="312283:312308" placeholder="..." />
+            <marker date="1468414267268" expanded="true" signature="318927:319022" placeholder="..." />
+            <marker date="1468414267268" expanded="true" signature="318960:319022" placeholder="..." />
+            <marker date="1468414267268" expanded="true" signature="318997:319022" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/icard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.84641635">
+          <caret line="72" column="7" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
