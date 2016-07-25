@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3eec4a00-6028-4870-b467-575f01178c68" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icard.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blueTeamE1.html" afterPath="$PROJECT_DIR$/blueTeamE1.html" />
     </list>
     <ignored path="campaning_engine.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -111,19 +109,8 @@
         <entry file="file://$PROJECT_DIR$/blueTeamE1.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="601" column="89" selection-start-line="0" selection-start-column="0" selection-end-line="623" selection-end-column="14" />
-              <folding>
-                <element signature="e#315975#318775#0" expanded="false" />
-                <marker date="1468414267268" expanded="true" signature="311266:311325" placeholder="..." />
-                <marker date="1468414267268" expanded="true" signature="311287:311325" placeholder="..." />
-                <marker date="1468414267268" expanded="true" signature="311312:311325" placeholder="..." />
-                <marker date="1468414267268" expanded="true" signature="312213:312308" placeholder="..." />
-                <marker date="1468414267268" expanded="true" signature="312246:312308" placeholder="..." />
-                <marker date="1468414267268" expanded="true" signature="312283:312308" placeholder="..." />
-                <marker date="1468414267268" expanded="true" signature="318927:319022" placeholder="..." />
-                <marker date="1468414267268" expanded="true" signature="318960:319022" placeholder="..." />
-                <marker date="1468414267268" expanded="true" signature="318997:319022" placeholder="..." />
-              </folding>
+              <caret line="601" column="82" selection-start-line="0" selection-start-column="0" selection-end-line="628" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -391,12 +378,6 @@
       <created>1464634190553</created>
       <option name="number" value="Default" />
       <updated>1464634190553</updated>
-    </task>
-    <task id="LOCAL-00005" summary="added mysql error">
-      <created>1464761019908</created>
-      <option name="number" value="00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1464761019908</updated>
     </task>
     <task id="LOCAL-00006" summary="added mysql error">
       <created>1464761388822</created>
@@ -686,7 +667,13 @@
       <option name="project" value="LOCAL" />
       <updated>1468409739595</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="sadded cron">
+      <created>1469430348382</created>
+      <option name="number" value="00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1469430348385</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -695,6 +682,7 @@
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -702,7 +690,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1130,19 +1117,8 @@
     <entry file="file://$PROJECT_DIR$/blueTeamE1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="601" column="89" selection-start-line="0" selection-start-column="0" selection-end-line="623" selection-end-column="14" />
-          <folding>
-            <element signature="e#315975#318775#0" expanded="false" />
-            <marker date="1468414267268" expanded="true" signature="311266:311325" placeholder="..." />
-            <marker date="1468414267268" expanded="true" signature="311287:311325" placeholder="..." />
-            <marker date="1468414267268" expanded="true" signature="311312:311325" placeholder="..." />
-            <marker date="1468414267268" expanded="true" signature="312213:312308" placeholder="..." />
-            <marker date="1468414267268" expanded="true" signature="312246:312308" placeholder="..." />
-            <marker date="1468414267268" expanded="true" signature="312283:312308" placeholder="..." />
-            <marker date="1468414267268" expanded="true" signature="318927:319022" placeholder="..." />
-            <marker date="1468414267268" expanded="true" signature="318960:319022" placeholder="..." />
-            <marker date="1468414267268" expanded="true" signature="318997:319022" placeholder="..." />
-          </folding>
+          <caret line="601" column="82" selection-start-line="0" selection-start-column="0" selection-end-line="628" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
