@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3eec4a00-6028-4870-b467-575f01178c68" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/icard.html" afterPath="$PROJECT_DIR$/icard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/header.inc.php" afterPath="$PROJECT_DIR$/includes/header.inc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
     </list>
     <ignored path="campaning_engine.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,22 +25,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.5904437">
+              <caret line="49" column="58" selection-start-line="49" selection-start-column="58" selection-end-line="49" selection-end-column="58" />
               <folding>
-                <marker date="1466753135988" expanded="true" signature="476:552" placeholder="SELECT id FR... users" />
+                <marker date="1470212349046" expanded="true" signature="476:552" placeholder="SELECT id FR... users" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.inc.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="header.inc.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/header.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.102389075">
+            <state vertical-scroll-proportion="-2.5">
               <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#header#0;n#!!top" expanded="true" />
@@ -202,7 +201,6 @@
         <option value="$PROJECT_DIR$/testEmail.html" />
         <option value="$PROJECT_DIR$/cron/emailValidator.py" />
         <option value="$PROJECT_DIR$/cron/wordExtractor.php" />
-        <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/address_class.php" />
         <option value="$PROJECT_DIR$/config/db_connection.php" />
         <option value="$PROJECT_DIR$/library/sendEmail.php" />
@@ -210,6 +208,7 @@
         <option value="$PROJECT_DIR$/blueTeamE1.html" />
         <option value="$PROJECT_DIR$/icard.html" />
         <option value="$PROJECT_DIR$/includes/header.inc.php" />
+        <option value="$PROJECT_DIR$/login.php" />
       </list>
     </option>
   </component>
@@ -381,12 +380,6 @@
       <created>1464634190553</created>
       <option name="number" value="Default" />
       <updated>1464634190553</updated>
-    </task>
-    <task id="LOCAL-00007" summary="added sessions">
-      <created>1464762461622</created>
-      <option name="number" value="00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1464762461622</updated>
     </task>
     <task id="LOCAL-00008" summary="added sessions and added userid to every file and logout when no session">
       <created>1464763026594</created>
@@ -676,7 +669,13 @@
       <option name="project" value="LOCAL" />
       <updated>1469431014346</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="sadded cron">
+      <created>1470211986934</created>
+      <option name="number" value="00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1470211986936</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -685,6 +684,7 @@
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -692,7 +692,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1028,16 +1027,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
-          <folding>
-            <marker date="1466753135988" expanded="true" signature="476:552" placeholder="SELECT id FR... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/address_class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1147,10 +1136,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/header.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.102389075">
+        <state vertical-scroll-proportion="-2.5">
           <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
           <folding>
             <element signature="n#style#0;n#div#0;n#header#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5904437">
+          <caret line="49" column="58" selection-start-line="49" selection-start-column="58" selection-end-line="49" selection-end-column="58" />
+          <folding>
+            <marker date="1470212349046" expanded="true" signature="476:552" placeholder="SELECT id FR... users" />
           </folding>
         </state>
       </provider>
