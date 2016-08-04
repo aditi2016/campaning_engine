@@ -116,7 +116,7 @@ if($_GET['ids']){
     $id = null;
     foreach($id_un as $v){
 
-        if(substr_compare($v,"-")){
+        if(strpos($v,"-")){
 
             $from_to = explode("-",$v);
             $from = intval($from_to[0]);
@@ -140,6 +140,7 @@ $sql = "SELECT  u.`name` , u.`mobile` , u.`email`  , u.`address` , u.`area` , " 
     " u.`rating`, u.`photo`, w.`status`, w.`emergency_no`,w.`native_place`,w.`dob` ".
     "FROM `bluenet_v3`.`users` as u left join `bluenet_v3`.`workers` AS w ON w.user_id = u.id WHERE id = " . $sqlStr . "; ";
 
+    echo $sql;die();
 $result = mysqli_query($db_handle, $sql);
 
     for($candArr = array(); $cand = mysqli_fetch_assoc($result); $candArr[] = $cand);
