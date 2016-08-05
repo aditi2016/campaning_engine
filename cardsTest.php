@@ -181,13 +181,13 @@ $result = mysqli_query($db_handle, $sql);
             width: 10in;
             background-color: #fff;text-align: center;border:thin solid #fff;">';
 
-        $html .= getIcard($societyD['logo'], $candArr[$i]['photo'], $candArr[$i]['name'], $candArr[$i]['service'], $candArr[$i]['id'],
+        $html .= getIcard($societyD['logo_id'], $candArr[$i]['photo'], $candArr[$i]['name'], $candArr[$i]['service'], $candArr[$i]['id'],
                     $societyD['address'], $candArr[$i]['emg'], $candArr[$i]['address'], $candArr[$i]['md5_id']);
 
         $i++;
         if($i>=count($candArr)) { $html .= '</div></div>'; break;}
 
-        $html .= getIcard($societyD['logo'], $candArr[$i]['photo'], $candArr[$i]['name'], $candArr[$i]['service'], $candArr[$i]['id'],
+        $html .= getIcard($societyD['logo_id'], $candArr[$i]['photo'], $candArr[$i]['name'], $candArr[$i]['service'], $candArr[$i]['id'],
             $societyD['address'], $candArr[$i]['emg'], $candArr[$i]['address'], $candArr[$i]['md5_id']);
 
         $i++;
@@ -196,13 +196,13 @@ $result = mysqli_query($db_handle, $sql);
             width: 10in;
             background-color: #fff;text-align: center;border:thin solid #fff;">';
 
-        $html .= getIcard($societyD['logo'], $candArr[$i]['photo'], $candArr[$i]['name'], $candArr[$i]['service'], $candArr[$i]['id'],
+        $html .= getIcard($societyD['logo_id'], $candArr[$i]['photo'], $candArr[$i]['name'], $candArr[$i]['service'], $candArr[$i]['id'],
             $societyD['address'], $candArr[$i]['emg'], $candArr[$i]['address'], $candArr[$i]['md5_id']);
 
         $i++;
         if($i>=count($candArr)) { $html .= '</div></div>'; break;}
 
-        $html .= getIcard($societyD['logo'], $candArr[$i]['photo'], $candArr[$i]['name'], $candArr[$i]['service'], $candArr[$i]['id'],
+        $html .= getIcard($societyD['logo_id'], $candArr[$i]['photo'], $candArr[$i]['name'], $candArr[$i]['service'], $candArr[$i]['id'],
             $societyD['address'], $candArr[$i]['emg'], $candArr[$i]['address'], $candArr[$i]['md5_id']);
 
 
