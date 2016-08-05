@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3eec4a00-6028-4870-b467-575f01178c68" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cardsTest.php" afterPath="$PROJECT_DIR$/cardsTest.php" />
     </list>
     <ignored path="campaning_engine.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -564,12 +563,6 @@
       <option name="number" value="Default" />
       <updated>1464634190553</updated>
     </task>
-    <task id="LOCAL-00015" summary="start campaning test&#10;">
-      <created>1465197623314</created>
-      <option name="number" value="00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1465197623314</updated>
-    </task>
     <task id="LOCAL-00016" summary="start campaning test&#10;">
       <created>1465883744376</created>
       <option name="number" value="00016" />
@@ -858,7 +851,13 @@
       <option name="project" value="LOCAL" />
       <updated>1470386972913</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="sadded cron">
+      <created>1470387493205</created>
+      <option name="number" value="00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1470387493206</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="ToolWindowManager">
