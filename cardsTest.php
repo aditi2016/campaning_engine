@@ -216,15 +216,15 @@ $result = mysqli_query($db_handle, $sql);
 
     }
 
-include("./library/mpdf60/mpdf.php");
+/*include("./library/mpdf60/mpdf.php");
 
 
 $mpdf=new mPDF('','A4-L');  
 
 $mpdf->WriteHTML($html);
 $mpdf->Output();
-exit;
-    //echo $html;
+exit;*/
+    echo $html;
 
 }
 //echo "hello";
