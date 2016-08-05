@@ -142,19 +142,12 @@ if($_GET['ids']){
     $societyD = mysqli_fetch_assoc($r);
 
 /*
- * SELECT  *
-FROM    (SELECT ID, SKU, Product,
-                ROW_NUMBER() OVER (PARTITION BY PRODUCT ORDER BY ID) AS RowNumber
-         FROM   MyTable
-         WHERE  SKU LIKE 'FOO%') AS a
-WHERE   a.RowNumber = 1
+ *
  * */
 
-    $sql = "SELECT  *
-FROM    (SELECT Distinct u.id AS id, u.md5_id,u.name, u.mobile, u.photo, u.`address` , s.name as service,  w.id AS worker_id, w.emergency_no,".
+    $sql = "SELECT Distinct (u.id) AS id, u.md5_id,u.name, u.mobile, u.photo, u.`address` , s.name as service,  w.id AS worker_id, w.emergency_no,".
         " ud.adhar_card, ud.voter_id, ud.driving_license, ud.pan_card, w.`status`,w.`native_place`,w.`dob`, ".
-        " lu.name as lord_name, lu.mobile as lord_mobile, lu.`address` as lord_address, ".
-        " ROW_NUMBER() OVER (PARTITION BY u.id ORDER BY u.id) AS RowNumber ".
+        " lu.name as lord_name, lu.mobile as lord_mobile, lu.`address` as lord_address ".
         " FROM `bluenet_v3`.`society_worker_mapping` AS swm ".
         " LEFT JOIN `bluenet_v3`.`workers` AS w on swm.worker_id = w.id".
         " LEFT JOIN `bluenet_v3`.`service_worker_mappings` AS srwm on srwm.worker_id = w.id".
@@ -164,10 +157,9 @@ FROM    (SELECT Distinct u.id AS id, u.md5_id,u.name, u.mobile, u.photo, u.`addr
         "
 
 LEFT JOIN `bluenet_v3`.user_documents AS ud ON u.id = ud.user_id
-WHERE swm.`society_id` =". $_GET['society_id'] ." AND u.id in ". $sqlStr . " ) AS a
-WHERE   a.RowNumber = 1; ";
+WHERE swm.`society_id` =". $_GET['society_id'] ." AND u.id in ". $sqlStr . " group by u.id ; ";
 
-    echo $sql;die();
+    //echo $sql;die();
 
 
 $result = mysqli_query($db_handle, $sql);
