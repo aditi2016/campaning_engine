@@ -14,12 +14,11 @@ $config['database'] = "bluenet_v3";
 $db_handle = mysqli_connect($config['host'], $config['user'], $config['password'], $config['database']);
 
 function getIcard($logo, $photo, $name, $service, $id, $office, $emg, $locAdd, $qrCode,$i){
+    $con = ($i%2==0)?'left':'right';
 
     return  '<div style=" height: 3.7in !important;
             width: 4.6in;
-            background-color: #fff;text-align: center;border:thin solid #fff;float: '.
-    ($i%2==0)?'left':'right'
-    .';">
+            background-color: #fff;text-align: center;border:thin solid #fff;float: '.$con.';">
 
     <div style="width: 2.3in;float: left;">
         <img src="http://api.file-dog.shatkonlabs.com/files/rahul/'.
@@ -216,15 +215,15 @@ $result = mysqli_query($db_handle, $sql);
 
     }
 
-/*include("./library/mpdf60/mpdf.php");
+include("./library/mpdf60/mpdf.php");
 
 
 $mpdf=new mPDF('','A4-L');  
 
 $mpdf->WriteHTML($html);
 $mpdf->Output();
-exit;*/
-    echo $html;
+exit;
+    //echo $html;
 
 }
 //echo "hello";
