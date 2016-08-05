@@ -80,8 +80,8 @@ function getIcard($logo, $photo, $name, $service, $id, $office, $emg, $locAdd, $
             </div>
         </div>
         <div style="height: 1.55in;text-align: Center;">
-            <img src="'.
-    $qrCode.'"
+            <img src="http://shatkonlabs.com/qr_code_generator/index2.php?data='.
+    $qrCode.'&size=4&level=L"
                  style=" border:thin solid black;margin-top:0.1in;max-width: 100%;height: 1.35in;"/>
 
 
