@@ -142,11 +142,13 @@ if($_GET['ids']){
 
 
 
-    $sql = "SELECT u.id AS id, u.md5_id,u.name, u.mobile, u.photo, u.`address` ,  w.id AS worker_id, w.emergency_no,".
+    $sql = "SELECT u.id AS id, u.md5_id,u.name, u.mobile, u.photo, u.`address` , s.name as service,  w.id AS worker_id, w.emergency_no,".
         " ud.adhar_card, ud.voter_id, ud.driving_license, ud.pan_card, w.`status`,w.`native_place`,w.`dob`, ".
         " lu.name as lord_name, lu.mobile as lord_mobile, lu.`address` as lord_address ".
         " FROM `bluenet_v3`.`society_worker_mapping` AS swm ".
         " LEFT JOIN `bluenet_v3`.`workers` AS w on swm.worker_id = w.id".
+        " LEFT JOIN `bluenet_v3`.`service_worker_mappings` AS srwm on srwm.worker_id = w.id".
+        " LEFT JOIN `bluenet_v3`.`services` AS s on s.id = srwm.service_id".
         " LEFT JOIN `bluenet_v3`.users AS u ON w.user_id = u.id ".
         " LEFT JOIN `bluenet_v3`.users AS lu ON w.ref_id = lu.id".
         "
