@@ -184,13 +184,13 @@ $result = mysqli_query($db_handle, $sql);
             background-color: #fff;text-align: center;border:thin solid #fff;">';
 
         $html .= getIcard($societyD['logo_id'], $candArr[$i]['photo'], $candArr[$i]['name'], $candArr[$i]['service'], $candArr[$i]['id'],
-                    $societyD['address'], $candArr[$i]['emg'], $candArr[$i]['address'], $candArr[$i]['md5_id']);
+                    $societyD['address'], $candArr[$i]['emergency_no'], $candArr[$i]['address'], $candArr[$i]['md5_id']);
 
         $i++;
         if($i>=count($candArr)) { $html .= '</div></div>'; break;}
 
         $html .= getIcard($societyD['logo_id'], $candArr[$i]['photo'], $candArr[$i]['name'], $candArr[$i]['service'], $candArr[$i]['id'],
-            $societyD['address'], $candArr[$i]['emg'], $candArr[$i]['address'], $candArr[$i]['md5_id']);
+            $societyD['address'], $candArr[$i]['emergency_no'], $candArr[$i]['address'], $candArr[$i]['md5_id']);
 
         $i++;
         if($i>=count($candArr)) { $html .= '</div></div>'; break;}
@@ -199,28 +199,28 @@ $result = mysqli_query($db_handle, $sql);
             background-color: #fff;text-align: center;border:thin solid #fff;">';
 
         $html .= getIcard($societyD['logo_id'], $candArr[$i]['photo'], $candArr[$i]['name'], $candArr[$i]['service'], $candArr[$i]['id'],
-            $societyD['address'], $candArr[$i]['emg'], $candArr[$i]['address'], $candArr[$i]['md5_id']);
+            $societyD['address'], $candArr[$i]['emergency_no'], $candArr[$i]['address'], $candArr[$i]['md5_id']);
 
         $i++;
         if($i>=count($candArr)) { $html .= '</div></div>'; break;}
 
         $html .= getIcard($societyD['logo_id'], $candArr[$i]['photo'], $candArr[$i]['name'], $candArr[$i]['service'], $candArr[$i]['id'],
-            $societyD['address'], $candArr[$i]['emg'], $candArr[$i]['address'], $candArr[$i]['md5_id']);
+            $societyD['address'], $candArr[$i]['emergency_no'], $candArr[$i]['address'], $candArr[$i]['md5_id']);
 
 
         $html .= '</div></div>';
 
     }
 
-/*include("./library/mpdf60/mpdf.php");
+include("./library/mpdf60/mpdf.php");
 
 
 $mpdf=new mPDF('','A4-L');  
 
 $mpdf->WriteHTML($html);
 $mpdf->Output();
-exit;*/
-    echo $html;
+exit;
+    //echo $html;
 
 }
 //echo "hello";
