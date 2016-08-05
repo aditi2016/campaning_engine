@@ -136,9 +136,13 @@ if($_GET['ids']){
     }
     $sqlStr .= $i;
 
+    $sql ="SELECT  * FROM `bluenet_v3`.societies WHERE id = ".$_GET['society_id']." ; ";
+    $r = mysqli_query($db_handle, $sql);
+    $societyD = mysqli_fetch_assoc($r);
 
 
-    $sql = "SELECT u.id AS id, u.name, u.mobile, u.rating, u.photo, u.`address` , u.`area` , w.id AS worker_id, w.emergency_no,".
+
+    $sql = "SELECT u.id AS id, u.md5_id,u.name, u.mobile, u.photo, u.`address` ,  w.id AS worker_id, w.emergency_no,".
         " ud.adhar_card, ud.voter_id, ud.driving_license, ud.pan_card, w.`status`,w.`native_place`,w.`dob`, ".
         " lu.name as lord_name, lu.mobile as lord_mobile, lu.`address` as lord_address ".
         " FROM `bluenet_v3`.`society_worker_mapping` AS swm ".
@@ -150,7 +154,7 @@ if($_GET['ids']){
 LEFT JOIN `bluenet_v3`.user_documents AS ud ON u.id = ud.user_id
 WHERE swm.`society_id` =". $_GET['society_id'] ." AND u.id = ". $sqlStr . "; ";
 
-    echo $sql;die();
+
 $result = mysqli_query($db_handle, $sql);
 
     for($candArr = array(); $cand = mysqli_fetch_assoc($result); $candArr[] = $cand);
@@ -177,14 +181,14 @@ $result = mysqli_query($db_handle, $sql);
             width: 10in;
             background-color: #fff;text-align: center;border:thin solid #fff;">';
 
-        $html .= getIcard($candArr[$i]['logo'], $candArr[$i]['photo'], $candArr[$i]['name'], $candArr[$i]['service'], $candArr[$i]['id'],
-                    $candArr[$i]['office'], $candArr[$i]['emg'], $candArr[$i]['locAdd'], $candArr[$i]['qrCode']);
+        $html .= getIcard($societyD['logo'], $candArr[$i]['photo'], $candArr[$i]['name'], $candArr[$i]['service'], $candArr[$i]['id'],
+                    $societyD['address'], $candArr[$i]['emg'], $candArr[$i]['address'], $candArr[$i]['md5_id']);
 
         $i++;
         if($i>=count($candArr)) { $html .= '</div></div>'; break;}
 
-        $html .= getIcard($candArr[$i]['logo'], $candArr[$i]['photo'], $candArr[$i]['name'], $candArr[$i]['service'], $candArr[$i]['id'],
-            $candArr[$i]['office'], $candArr[$i]['emg'], $candArr[$i]['locAdd'], $candArr[$i]['qrCode']);
+        $html .= getIcard($societyD['logo'], $candArr[$i]['photo'], $candArr[$i]['name'], $candArr[$i]['service'], $candArr[$i]['id'],
+            $societyD['address'], $candArr[$i]['emg'], $candArr[$i]['address'], $candArr[$i]['md5_id']);
 
         $i++;
         if($i>=count($candArr)) { $html .= '</div></div>'; break;}
@@ -192,14 +196,14 @@ $result = mysqli_query($db_handle, $sql);
             width: 10in;
             background-color: #fff;text-align: center;border:thin solid #fff;">';
 
-        $html .= getIcard($candArr[$i]['logo'], $candArr[$i]['photo'], $candArr[$i]['name'], $candArr[$i]['service'], $candArr[$i]['id'],
-            $candArr[$i]['office'], $candArr[$i]['emg'], $candArr[$i]['locAdd'], $candArr[$i]['qrCode']);
+        $html .= getIcard($societyD['logo'], $candArr[$i]['photo'], $candArr[$i]['name'], $candArr[$i]['service'], $candArr[$i]['id'],
+            $societyD['address'], $candArr[$i]['emg'], $candArr[$i]['address'], $candArr[$i]['md5_id']);
 
         $i++;
         if($i>=count($candArr)) { $html .= '</div></div>'; break;}
 
-        $html .= getIcard($candArr[$i]['logo'], $candArr[$i]['photo'], $candArr[$i]['name'], $candArr[$i]['service'], $candArr[$i]['id'],
-            $candArr[$i]['office'], $candArr[$i]['emg'], $candArr[$i]['locAdd'], $candArr[$i]['qrCode']);
+        $html .= getIcard($societyD['logo'], $candArr[$i]['photo'], $candArr[$i]['name'], $candArr[$i]['service'], $candArr[$i]['id'],
+            $societyD['address'], $candArr[$i]['emg'], $candArr[$i]['address'], $candArr[$i]['md5_id']);
 
 
         $html .= '</div></div>';
