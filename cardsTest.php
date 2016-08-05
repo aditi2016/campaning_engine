@@ -71,7 +71,7 @@ function getIcard($logo, $photo, $name, $service, $id, $office, $emg, $locAdd, $
         <div style="height: 0.72in;width: 2.3in;background-color: #2aafc3;float: left;border-top: thick solid #fff;">
             <div style="width: 0.7in;float: left;"
             >
-                <img src="http://localhost/dpower4/campaning_engine/drawable-xxhdpi-icon.png"
+                <img src="https://raw.githubusercontent.com/rahullahoria/bjsIonic/master/blueteam/resources/android/icon/drawable-xxhdpi-icon.png"
                      style="width: 0.5in;height:0.5in;margin-top:0.1in; "/>
             </div>
             <div style="font-size: small; margin-top:0.1in;">
@@ -210,14 +210,15 @@ $result = mysqli_query($db_handle, $sql);
 
     }
 
-include("./library/mpdf60/mpdf.php");
+/*include("./library/mpdf60/mpdf.php");
 
 
 $mpdf=new mPDF('','A4-L');  
 
 $mpdf->WriteHTML($html);
 $mpdf->Output();
-exit;
+exit;*/
+    echo $html;
 
 }
 //echo "hello";
