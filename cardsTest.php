@@ -167,7 +167,7 @@ LEFT JOIN `bluenet_v3`.user_documents AS ud ON u.id = ud.user_id
 WHERE swm.`society_id` =". $_GET['society_id'] ." AND u.id in ". $sqlStr . " ) AS a
 WHERE   a.RowNumber = 1; ";
 
-    //echo $sql;die();
+    echo $sql;die();
 
 
 $result = mysqli_query($db_handle, $sql);
