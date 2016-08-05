@@ -13,11 +13,13 @@ $config['database'] = "bluenet_v3";
 
 $db_handle = mysqli_connect($config['host'], $config['user'], $config['password'], $config['database']);
 
-function getIcard($logo, $photo, $name, $service, $id, $office, $emg, $locAdd, $qrCode){
+function getIcard($logo, $photo, $name, $service, $id, $office, $emg, $locAdd, $qrCode,$i){
 
     return  '<div style=" height: 3.7in !important;
             width: 4.6in;
-            background-color: #fff;text-align: center;border:thin solid #fff;float: right;">
+            background-color: #fff;text-align: center;border:thin solid #fff;float: '.
+    ($i%2==0)?'left':'right'
+    .';">
 
     <div style="width: 2.3in;float: left;">
         <img src="http://api.file-dog.shatkonlabs.com/files/rahul/'.
@@ -186,13 +188,13 @@ $result = mysqli_query($db_handle, $sql);
             background-color: #fff;text-align: center;border:thin solid #fff;">';
 
         $html .= getIcard($societyD['logo_id'], $candArr[$i]['photo'], $candArr[$i]['name'], $candArr[$i]['service'], $candArr[$i]['id'],
-                    $societyD['address'], $candArr[$i]['emergency_no'], $candArr[$i]['address'], $candArr[$i]['md5_id']);
+                    $societyD['address'], $candArr[$i]['emergency_no'], $candArr[$i]['address'], $candArr[$i]['md5_id'],$i);
 
         $i++;
         if($i>=count($candArr)) { $html .= '</div></div>'; break;}
 
         $html .= getIcard($societyD['logo_id'], $candArr[$i]['photo'], $candArr[$i]['name'], $candArr[$i]['service'], $candArr[$i]['id'],
-            $societyD['address'], $candArr[$i]['emergency_no'], $candArr[$i]['address'], $candArr[$i]['md5_id']);
+            $societyD['address'], $candArr[$i]['emergency_no'], $candArr[$i]['address'], $candArr[$i]['md5_id'],$i);
 
         $i++;
         if($i>=count($candArr)) { $html .= '</div></div>'; break;}
@@ -201,13 +203,13 @@ $result = mysqli_query($db_handle, $sql);
             background-color: #fff;text-align: center;border:thin solid #fff;">';
 
         $html .= getIcard($societyD['logo_id'], $candArr[$i]['photo'], $candArr[$i]['name'], $candArr[$i]['service'], $candArr[$i]['id'],
-            $societyD['address'], $candArr[$i]['emergency_no'], $candArr[$i]['address'], $candArr[$i]['md5_id']);
+            $societyD['address'], $candArr[$i]['emergency_no'], $candArr[$i]['address'], $candArr[$i]['md5_id'],$i);
 
         $i++;
         if($i>=count($candArr)) { $html .= '</div></div>'; break;}
 
         $html .= getIcard($societyD['logo_id'], $candArr[$i]['photo'], $candArr[$i]['name'], $candArr[$i]['service'], $candArr[$i]['id'],
-            $societyD['address'], $candArr[$i]['emergency_no'], $candArr[$i]['address'], $candArr[$i]['md5_id']);
+            $societyD['address'], $candArr[$i]['emergency_no'], $candArr[$i]['address'], $candArr[$i]['md5_id'],$i);
 
 
         $html .= '</div></div>';
