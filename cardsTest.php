@@ -159,14 +159,14 @@ if($_GET['ids']){
 LEFT JOIN `bluenet_v3`.user_documents AS ud ON u.id = ud.user_id
 WHERE swm.`society_id` =". $_GET['society_id'] ." AND u.id in ". $sqlStr . " group by u.id ; ";
 
-    echo $sql;die();
+//    echo $sql;echocount($candArr); die();
 
 
 $result = mysqli_query($db_handle, $sql);
 
     for($candArr = array(); $cand = mysqli_fetch_assoc($result); $candArr[] = $cand);
 
-
+    echo $sql;echo count($candArr); die();
 
     $html = '
 <style>
@@ -187,13 +187,13 @@ $result = mysqli_query($db_handle, $sql);
             <div style=" height: 3.6in !important;
             width: 10in;
             background-color: #fff;text-align: center;border:thin solid #fff;">';
-
+//1st icard of page
         $html .= getIcard($societyD['logo_id'], $candArr[$i]['photo'], $candArr[$i]['name'], $candArr[$i]['service'], $candArr[$i]['id'],
                     $societyD['address'], $candArr[$i]['emergency_no'], $candArr[$i]['address'], $candArr[$i]['md5_id'],$i);
 
         $i++;
         if($i>=count($candArr)) { $html .= '</div></div>'; break;}
-
+//2st icard of page
         $html .= getIcard($societyD['logo_id'], $candArr[$i]['photo'], $candArr[$i]['name'], $candArr[$i]['service'], $candArr[$i]['id'],
             $societyD['address'], $candArr[$i]['emergency_no'], $candArr[$i]['address'], $candArr[$i]['md5_id'],$i);
 
@@ -202,13 +202,13 @@ $result = mysqli_query($db_handle, $sql);
         $html .= '</div><div style=" height: 3.6in !important;
             width: 10in;
             background-color: #fff;text-align: center;border:thin solid #fff;">';
-
+//3rd icard of page
         $html .= getIcard($societyD['logo_id'], $candArr[$i]['photo'], $candArr[$i]['name'], $candArr[$i]['service'], $candArr[$i]['id'],
             $societyD['address'], $candArr[$i]['emergency_no'], $candArr[$i]['address'], $candArr[$i]['md5_id'],$i);
 
         $i++;
         if($i>=count($candArr)) { $html .= '</div></div>'; break;}
-
+//4th icard of page
         $html .= getIcard($societyD['logo_id'], $candArr[$i]['photo'], $candArr[$i]['name'], $candArr[$i]['service'], $candArr[$i]['id'],
             $societyD['address'], $candArr[$i]['emergency_no'], $candArr[$i]['address'], $candArr[$i]['md5_id'],$i);
 
