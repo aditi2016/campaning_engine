@@ -166,7 +166,7 @@ $result = mysqli_query($db_handle, $sql);
 
     for($candArr = array(); $cand = mysqli_fetch_assoc($result); $candArr[] = $cand);
 
-    echo $sql;echo count($candArr); die();
+    //echo $sql;echo count($candArr); die();
 
     $html = '
 <style>
@@ -214,6 +214,7 @@ $result = mysqli_query($db_handle, $sql);
 
 
         $html .= '</div></div>';
+        $i++;
 
     }
 
