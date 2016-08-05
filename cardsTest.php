@@ -156,6 +156,8 @@ if($_GET['ids']){
 LEFT JOIN `bluenet_v3`.user_documents AS ud ON u.id = ud.user_id
 WHERE swm.`society_id` =". $_GET['society_id'] ." Where u.id = ". $sqlStr . " group by u.id ; ";
 
+    echo $sql;die();
+
 
 $result = mysqli_query($db_handle, $sql);
 
