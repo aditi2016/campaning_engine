@@ -130,11 +130,11 @@ if($_GET['ids']){
 
     }
 
-    $sqlStr = "";
+    $sqlStr = "(";
     foreach($id as $i){
-        $sqlStr .= $i . " or ";
+        $sqlStr .= $i . " , ";
     }
-    $sqlStr .= $i;
+    $sqlStr .= $i.')';
 
     $sql ="SELECT  * FROM `bluenet_v3`.societies WHERE id = ".$_GET['society_id']." ; ";
     $r = mysqli_query($db_handle, $sql);
@@ -154,7 +154,7 @@ if($_GET['ids']){
         "
 
 LEFT JOIN `bluenet_v3`.user_documents AS ud ON u.id = ud.user_id
-WHERE swm.`society_id` =". $_GET['society_id'] ." Where u.id = ". $sqlStr . " group by u.id ; ";
+WHERE swm.`society_id` =". $_GET['society_id'] ." AND u.id in ". $sqlStr . " group by u.id ; ";
 
     echo $sql;die();
 
