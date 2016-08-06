@@ -12,6 +12,7 @@ if(isset($_GET['getActive'])){
 	if ($noOfActiveEmails == 0 ) return false;
     
     $emailNo = rand(0, $noOfActiveEmails-1);
+    $costsArr[$emailNo]['sleep'] = 300/$noOfActiveEmails;
     echo json_encode( $costsArr[$emailNo]);
     exit;
 }
