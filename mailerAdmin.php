@@ -21,7 +21,7 @@ if(isset($_GET['getActive'])){
 	if ($noOfActiveEmails == 0 ) return false;
     
     $emailNo = rand(0, $noOfActiveEmails-1);
-    json_encode( $costsArr[$emailNo]);
+    echo json_encode( $costsArr[$emailNo]);
     exit;
 }
 

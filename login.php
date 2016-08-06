@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { //checking that if method is post
 </head>
 <body>
 <div style="text-align: center;">
-    <img class="raleway-logo" src="http://shatkonlabs.com/images/logo.png" height="50" width="50">
+    <img class="raleway-logo" src="http://shatkonlabs.com/images/logo.png" height="150" width="150">
     <h1>Shatkon Labs Pvt. Ltd.</h1>
     <form method="post" action="#">
         Username:
