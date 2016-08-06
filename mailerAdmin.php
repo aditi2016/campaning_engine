@@ -1,4 +1,5 @@
 <?php
+$db_handle = mysqli_connect("localhost","root","redhat@11111p","gmail_mailer");
 
 if(isset($_GET['getActive'])){
 	$result = mysqli_query($db_handle,"select * from users where status = 'active';");
@@ -28,7 +29,7 @@ if (!isset($_SESSION['user_id']))
 
 $userID = $_SESSION['user_id'];
 
-$db_handle = mysqli_connect("localhost","root","redhat@11111p","gmail_mailer");
+
 
 $result = mysqli_query($db_handle,"select * from users where status = 'in-active';");
 
