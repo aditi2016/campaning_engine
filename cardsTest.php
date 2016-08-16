@@ -45,11 +45,12 @@ function getIcard($logo, $photo, $name, $service, $id, $office, $emg, $locAdd, $
         </div>
 
         <div style="height: 0.3in;width: 2.3in;float: left;border-top: thick solid #2aafc3;font-size:small;	">
-            '.
+<div style="width: 1.7in;height: 0.3in;float:left;">            '.
     $office.'
-
-<img src="http://api.file-dog.shatkonlabs.com/files/rahul/391" style="margin-top:0.1in;max-width: 0.5in;height: 0.3in;float:right"/>
-
+    </div>
+<div style="width: 0.5in;height: 0.3in;float:right;">
+<img src="http://api.file-dog.shatkonlabs.com/files/rahul/391" style="max-width: 0.5in;height: 0.3in;float:right"/>
+</div>
         </div>
     </div>
 
