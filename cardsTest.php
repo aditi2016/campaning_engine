@@ -40,7 +40,7 @@ function getIcard($logo, $photo, $name, $service, $id, $office, $emg, $locAdd, $
     $name.'</b><br/>
             <span style="font-size:small;">'.
     $service.'</span><br/>
-            '.$localId.'<span style="style="font-size:9px;">(DE-'.
+            '.$localId.'<span style="font-size:9px;">(DE-'.
     $id.')</span>
         </div>
 
