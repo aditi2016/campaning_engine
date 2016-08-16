@@ -47,7 +47,8 @@ function getIcard($logo, $photo, $name, $service, $id, $office, $emg, $locAdd, $
         <div style="height: 0.3in;width: 2.3in;float: left;border-top: thick solid #2aafc3;font-size:small;	">
             '.
     $office.'
-<img src="http://api.file-dog.shatkonlabs.com/files/rahul/391" style="margin-top:0.1in;max-width: 0.5in;height: 0.3in;float:left"/>
+
+<img src="http://api.file-dog.shatkonlabs.com/files/rahul/391" style="margin-top:0.1in;max-width: 0.5in;height: 0.3in;float:right"/>
 
         </div>
     </div>
