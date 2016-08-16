@@ -37,16 +37,16 @@ function getIcard($logo, $photo, $name, $service, $id, $office, $emg, $locAdd, $
         <div style="height: 0.9in;text-align:Center;width: 2.3in;float: left;">
             <br/>
             <b style="font-size:large;">'.
-    $name.'</b><br/>
+    ucwords($name).'</b><br/>
             <span style="font-size:small;">'.
-    $service.'</span><br/>
+    ucwords($service).'</span><br/>
             '.$localId.'<span style="font-size:12px;"> (DE-'.
     $id.')</span>
         </div>
 
         <div style="height: 0.3in;width: 2.3in;float: left;border-top: thick solid #2aafc3;font-size:small;	">
 <div style="width: 1.8in;height: 0.3in;float:left;">            '.
-    $office.'
+    ucwords($office).'
     </div>
 <div style="width: 0.4in;height: 0.3in;float:right;">
 <img src="http://api.file-dog.shatkonlabs.com/files/rahul/391" style="max-width: 0.4in;height: 0.3in;float:right"/>
@@ -66,7 +66,7 @@ function getIcard($logo, $photo, $name, $service, $id, $office, $emg, $locAdd, $
     $emg.'<br/>
 
                 <b>Address :</b> '.
-    $locAdd.'
+    ucwords($locAdd).'
 
 
             </div>
