@@ -21,10 +21,12 @@ function getIcard($logo, $photo, $name, $service, $id, $office, $emg, $locAdd, $
             background-color: #fff;text-align: center;border:thin solid #fff;float: '.$con.';">
 
     <div style="width: 2.3in;float: left;background-image: url(\'images/only_card.png\');">
+    <div  style="height: 0.8in;width: 2.3in;">
         <img src="http://api.file-dog.shatkonlabs.com/files/rahul/'.
 
     $logo.'"
              style="margin-top:0.1in;max-width: 2in;height: 0.6in;"/>
+             </div>
 
         <div  style="height: 1.2in;width: 2.3in;background-color:#2aafc3 ;">
 
