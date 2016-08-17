@@ -20,7 +20,7 @@ function getIcard($logo, $photo, $name, $service, $id, $office, $emg, $locAdd, $
             width: 4.6in;
             background-color: #fff;text-align: center;border:thin solid #fff;float: '.$con.';">
 
-    <div style="width: 2.3in;float: left;background-image: url("images/only_card.png");">
+    <div style="width: 2.3in;float: left;background-image: url(\'images/only_card.png\');">
         <img src="http://api.file-dog.shatkonlabs.com/files/rahul/'.
 
     $logo.'"
