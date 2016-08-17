@@ -28,7 +28,7 @@ function getIcard($logo, $photo, $name, $service, $id, $office, $emg, $locAdd, $
              style="margin-top:0.1in;max-width: 2in;height: 0.6in;"/>
              </div>
 
-        <div  style="padding-top: 0.2in;height: 1.2in;width: 2.3in;background-color:#2aafc3 ;">
+        <div  style="margin-top: 0.2in;height: 1.2in;width: 2.3in;background-color:#2aafc3 ;">
 
             <img src="http://api.file-dog.shatkonlabs.com/files/rahul/'.
 
