@@ -59,7 +59,7 @@ function getIcard($logo, $photo, $name, $service, $id, $office, $emg, $locAdd, $
 
         <div style="height: 0.7in;width: 2.3in;background-color:#2aafc3 ;">
 
-            <div style="font-size:small;margin-left: 0.1in;text-align: left;">
+            <div style="font-size:small;margin-left: 0.1in;text-align: left;font-color: #fff;">
 
 
                 <b>Emergnecy No :</b> '.
@@ -77,7 +77,7 @@ function getIcard($logo, $photo, $name, $service, $id, $office, $emg, $locAdd, $
                 <img src="https://raw.githubusercontent.com/rahullahoria/bjsIonic/master/blueteam/resources/android/icon/drawable-xxhdpi-icon.png"
                      style="width: 0.5in;height:0.5in;margin-top:0.1in; "/>
             </div>
-            <div style="font-size: small; margin-top:0.1in;">
+            <div style="font-size: small; margin-top:0.1in;font-color: #fff;">
                 <b style="font-size: smaller;">
                     Check Authenticity By<br/>Install "Blueteam" App & scan below QR code</b>
             </div>
@@ -91,7 +91,7 @@ function getIcard($logo, $photo, $name, $service, $id, $office, $emg, $locAdd, $
         </div>
 
         <div style="height: 0.4in;width: 2.3in;background-color: #2aafc3;float: left;">
-                <span style="font-size: smaller;">
+                <span style="font-size: smaller;font-color: #fff;">
             Maid|Cook|Driver|Babysitter
 
                 <b >
