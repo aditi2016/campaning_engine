@@ -55,7 +55,7 @@ function getIcard($logo, $photo, $name, $service, $id, $office, $emg, $locAdd, $
     </div>
 
 
-    <div style="height: 3.5in;width: 2.3in;float: right;">
+    <div style="height: 3.5in;width: 2.3in;float: right;font-color: #fff;">
 
         <div style="height: 0.7in;width: 2.3in;background-color:#2aafc3 ;">
 
