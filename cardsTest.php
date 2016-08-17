@@ -24,7 +24,7 @@ function getIcard($logo, $photo, $name, $service, $id, $office, $emg, $locAdd, $
         <img src="http://api.file-dog.shatkonlabs.com/files/rahul/'.
 
     $logo.'"
-             style="margin-top:0.1in;max-width: 2in;height: 0.8in;"/>
+             style="margin-top:0.1in;max-width: 2in;height: 0.6in;"/>
 
         <div  style="height: 1.2in;width: 2.3in;background-color:#2aafc3 ;">
 
