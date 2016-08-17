@@ -28,7 +28,7 @@ function getIcard($logo, $photo, $name, $service, $id, $office, $emg, $locAdd, $
              style="margin-top:0.1in;max-width: 2in;height: 0.6in;"/>
              </div>
 
-        <div  style="margin-top: 0.2in;height: 1.2in;width: 2.3in;background-color:#2aafc3 ;">
+        <div  style="margin-top: 0.2in;height: 1.2in;width: 2.3in;">
 
             <img src="http://api.file-dog.shatkonlabs.com/files/rahul/'.
 
@@ -46,7 +46,7 @@ function getIcard($logo, $photo, $name, $service, $id, $office, $emg, $locAdd, $
     $id.')</span>
         </div>
 
-        <div style="height: 0.3in;width: 2.3in;float: left;border-top: thick solid #2aafc3;font-size:small;	">
+        <div style="height: 0.3in;width: 2.3in;float: left;border-top: thick solid #00a0aa;font-size:small;	">
 <div style="width: 1.8in;height: 0.3in;float:left;">            '.
     ucwords($office).'
     </div>
@@ -59,7 +59,7 @@ function getIcard($logo, $photo, $name, $service, $id, $office, $emg, $locAdd, $
 
     <div style="height: 3.5in;width: 2.3in;float: right;color: #fff;">
 
-        <div style="height: 0.7in;width: 2.3in;background-color:#2aafc3 ;">
+        <div style="height: 0.7in;width: 2.3in;background-color:#00a0aa ;">
 
             <div style="font-size:small;margin-left: 0.1in;text-align: left;font-color: #fff;">
 
@@ -73,7 +73,7 @@ function getIcard($logo, $photo, $name, $service, $id, $office, $emg, $locAdd, $
 
             </div>
         </div>
-        <div style="height: 0.72in;width: 2.3in;background-color: #2aafc3;float: left;border-top: thick solid #fff;">
+        <div style="height: 0.72in;width: 2.3in;background-color: #00a0aa;float: left;border-top: thick solid #fff;">
             <div style="width: 0.7in;float: left;"
             >
                 <img src="https://raw.githubusercontent.com/rahullahoria/bjsIonic/master/blueteam/resources/android/icon/drawable-xxhdpi-icon.png"
@@ -92,7 +92,7 @@ function getIcard($logo, $photo, $name, $service, $id, $office, $emg, $locAdd, $
 
         </div>
 
-        <div style="height: 0.4in;width: 2.3in;background-color: #2aafc3;float: left;">
+        <div style="height: 0.4in;width: 2.3in;background-color: #00a0aa;float: left;">
                 <span style="font-size: smaller;font-color: #fff;">
             Maid|Cook|Driver|Babysitter
 
