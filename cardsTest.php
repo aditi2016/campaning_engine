@@ -33,7 +33,7 @@ function getIcard($logo, $photo, $name, $service, $id, $office, $emg, $locAdd, $
             <img src="http://api.file-dog.shatkonlabs.com/files/rahul/'.
 
     $photo.'"
-                 style="border-radius: 15px;max-width: 2in;height: 1.2in;"/>
+                 style="border:thin solid black;border-radius: 15px;max-width: 2in;height: 1.2in;"/>
         </div>
 
         <div style="height: 0.9in;text-align:Center;width: 2.3in;float: left;">
