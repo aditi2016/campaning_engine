@@ -533,12 +533,6 @@
       <option name="number" value="Default" />
       <updated>1464634190553</updated>
     </task>
-    <task id="LOCAL-00051" summary="sadded cron">
-      <created>1467970474415</created>
-      <option name="number" value="00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1467970474416</updated>
-    </task>
     <task id="LOCAL-00052" summary="sadded cron">
       <created>1467970651507</created>
       <option name="number" value="00052" />
@@ -827,7 +821,13 @@
       <option name="project" value="LOCAL" />
       <updated>1471441621457</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="sadded cron">
+      <created>1471441763064</created>
+      <option name="number" value="00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1471441763064</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="ToolWindowManager">
