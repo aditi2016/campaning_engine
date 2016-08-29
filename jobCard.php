@@ -52,8 +52,8 @@ if($_GET['ids']) {
             $con = ($j%2==0)?'left':'right';
 
             $html .= '<div style="height: 5.9cm !important;background-image: url(\'images/jobCard.png\');background-position: center top;
-    background-size: 100% auto;width: 10.4cm;background-color: #fff;float: '.$con.';">
-                <div style="float:left;margin-left:-6cm;margin-top:0.1cm;font-size:small; "> S.No. '.date("Ymd") .$id[($i+$j)].'</div>
+    background-size: 100% auto;width: 10.47cm;background-color: #fff;float: '.$con.';">
+                <div style="float:left;margin-left:-6cm;margin-top:0.4cm;font-size:small; "> S.No. '.date("Ymd") .$id[($i+$j)].'</div>
 
             </div>';
             if($i+$j+2 > count($id))
